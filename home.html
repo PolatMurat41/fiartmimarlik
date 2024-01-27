@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ana Sayfa</title>
+        <link rel="icon" type="image/x-icon" href="assets/f.ico" />
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+    </head>
+    <body>
+
+        <header>
+
+            <a href="#" class="logo">
+                <img src="assets/img/logo.png" alt="FIART LOGO">
+            </a>
+
+            <ul>
+                <!-- <li><a href="#" class="active">Ana Sayfa</a></li> -->
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="projects.html">Projeler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <img src="assets/img/star03.jpg" id="stars">
+            <!-- <img src="assets/img/moon.png" id="moon"> -->
+            <img src="assets/img/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">FIART</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="assets/img/on01.png" id="mountains_front">
+        </section>
+
+        <div class="grid-container">
+            <div class="grid-item" id="grid-item-1">
+                <div class="video-placeholder"></div>
+            </div>
+    
+
+            <div class="grid-item" id="grid-item-2">
+                <div class="video-placeholder"></div>
+            </div>
+        
+            
+            <div class="grid-item" id="grid-item-3">
+                <div class="video-placeholder"></div>
+            </div>
+        
+            
+            <div class="grid-item" id="grid-item-4">
+                <div class="video-placeholder"></div>
+            </div>
+        </div>
+        
+
+
+        <div class="sec" id="sec">
+            <h2>Parallax</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae dolores expedita ullam sequi quidem molestiae adipisci debitis eaque nemo, libero labore soluta sapiente dolor voluptas distinctio enim voluptate deleniti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorem itaque dolor dignissimos ipsum expedita consequatur nemo recusandae rem ullam tempora eaque facere blanditiis, vel molestiae nulla voluptate adipisci molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore eum quaerat quia recusandae, aliquid eaque modi ipsa explicabo accusamus officiis quis voluptates magnam vitae iste itaque qui numquam velit provident? <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit, nam rerum est blanditiis quos cum quidem. Nihil consequuntur incidunt eligendi esse cum, voluptas, fugiat quam nemo expedita officiis magnam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo magni eligendi harum rerum corporis necessitatibus illum, quod distinctio ut at sunt? Tenetur odio ipsum architecto excepturi commodi iure. Et, repellat! <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illo omnis provident? Ullam eaque, tempore, amet facere aliquam possimus ipsam cumque ratione voluptatum odio dolores sapiente veritatis vero quam! Illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi libero magnam officiis? Eos eaque cum, voluptates porro laboriosam illum laudantium nobis perspiciatis? Rerum laudantium voluptate nostrum ea et nulla est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum aliquid soluta pariatur harum saepe obcaecati incidunt provident possimus. Exercitationem officia minima quia fugit laborum possimus explicabo animi natus harum.<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illo omnis provident? Ullam eaque, tempore, amet facere aliquam possimus ipsam cumque ratione voluptatum odio dolores sapiente veritatis vero quam! Illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi libero magnam officiis? Eos eaque cum, voluptates porro laboriosam illum laudantium nobis perspiciatis? Rerum laudantium voluptate nostrum ea et nulla est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum aliquid soluta pariatur harum saepe obcaecati incidunt provident possimus. Exercitationem officia minima quia fugit laborum possimus explicabo animi natus harum. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illo omnis provident? Ullam eaque, tempore, amet facere aliquam possimus ipsam cumque ratione voluptatum odio dolores sapiente veritatis vero quam! Illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi libero magnam officiis? Eos eaque cum, voluptates porro laboriosam illum laudantium nobis perspiciatis? Rerum laudantium voluptate nostrum ea et nulla est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum aliquid soluta pariatur harum saepe obcaecati incidunt provident possimus. Exercitationem officia minima quia fugit laborum possimus explicabo animi natus harum.</p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            // let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            //let header = document.querySelector('header');
+
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                // moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 5 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+               // header.style.top = value * 0.5 + 'px';
+            })
+        </script>   
+        
+        <script>
+            document.addEventListener("DOMContentLoaded",function(){
+                const gridItems = document.querySelectorAll('.grid-item');
+
+                gridItems.forEach(item => {
+                    item.addEventListener('mouseenter',function(){
+                        item.innerHTML = '<video autoplay muted loop><source src="video.mp4 type="video/mp4"></video ';
+                    });
+
+                    item.addEventListener('mouseleave', function(){
+                        item.innerHTML = '<div class="video-placeholder"></div> ';
+                    });
+                });
+            });
+        </script>
+
+        <!-- HEADER SCROLL BEYAZ OLMASI -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var header = document.querySelector("header");
+                var scrollThreshold = 200; // Değişiklik için belirlenen scroll eşiği (pixel cinsinden)
+
+                function updateHeaderBackground() {
+                    var scrollPosition = window.scrollY;
+
+                    if (scrollPosition > scrollThreshold) {
+                        header.classList.add("scrolled");
+                    } else {
+                        header.classList.remove("scrolled");
+                    }
+                }
+
+                window.addEventListener("scroll", updateHeaderBackground);
+            });
+        </script>
+
+    </body>
+</html>
