@@ -20,25 +20,7 @@
             </ul>
         </header>
         
-        <!-- HEADER SCROLL BEYAZ OLMASI -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var header = document.querySelector("header");
-                var scrollThreshold = 200; // Değişiklik için belirlenen scroll eşiği (pixel cinsinden)
-
-                function updateHeaderBackground() {
-                    var scrollPosition = window.scrollY;
-
-                    if (scrollPosition > scrollThreshold) {
-                        header.classList.add("scrolled");
-                    } else {
-                        header.classList.remove("scrolled");
-                    }
-                }
-
-                window.addEventListener("scroll", updateHeaderBackground);
-            });
-        </script>
+        <script src="js/hakkimizda.js"></script>
 
     </body>
 </html>
