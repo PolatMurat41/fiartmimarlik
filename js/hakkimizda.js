@@ -3,7 +3,7 @@
 //  HEADER SCROLL BEYAZ OLMASI
 document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector("header");
-    var scrollThreshold = 200; // Değişiklik için belirlenen scroll eşiği (pixel cinsinden)
+    var scrollThreshold = 10; // Değişiklik için belirlenen scroll eşiği (pixel cinsinden)
 
     function updateHeaderBackground() {
         var scrollPosition = window.scrollY;

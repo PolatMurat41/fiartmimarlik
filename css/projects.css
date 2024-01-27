@@ -80,3 +80,25 @@ header ul li a.active
     background: #fff;
     color: black;
 }
+
+
+/* LOREM IPSUM DENEME */
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+}
