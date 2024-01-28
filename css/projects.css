@@ -87,18 +87,18 @@ header ul li a.active
 {
     position: relative;
     padding: 100px;
-    background: #1c0522;
+    /* background: #1c0522; */
 }
 
 .sec h2
 {
     font-size: 3.5em;
     margin-bottom: 10px;
-    color: #fff;
+    color: black;
 }
 
 .sec p
 {
     font-size: 1em;
-    color: #fff;
+    color: black;
 }
