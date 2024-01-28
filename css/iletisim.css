@@ -5,8 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
   scroll-behavior: smooth;
+
+  /* HARITA HOCAM */
+  
 }
 
 body{
@@ -80,3 +82,73 @@ header ul li a.active
     background: #fff;
     color: black;
 }
+
+
+/* HARITA HOCAM */
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+  
+.map-section,
+.mailto-section {
+    flex: 1;
+    height: 100%;
+}
+
+.map-section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.mailto-section {
+    width: 50%;
+    /* background: #fff; */
+    background: transparent;
+    padding: 20px;
+}
+
+/* 
+#harita
+{
+} */
+
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    header {
+      padding: 20px;
+    }
+  
+    header .logo {
+      font-size: 1.5em;
+    }
+  
+    .content-container {
+      padding: 50px 0;
+    }
+  
+    .map-section,
+    .mailto-section {
+      width: 100%;
+    }
+  
+    .mailto-section {
+      padding: 10px;
+    }
+
+    #harita{
+        width: 100%;
+        height: 300px;
+    }
+  }

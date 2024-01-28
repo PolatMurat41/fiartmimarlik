@@ -36,6 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    if(window.location.pathname === '/projects.html'){
+        document.body.classList.add("projects-page");
+        headerLinks[2].classList.add("active");
+    }
+
     window.addEventListener("load", updateActivateLink);
     window.addEventListener("hashchange", updateActivateLink);
 });

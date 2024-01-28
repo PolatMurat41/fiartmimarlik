@@ -35,6 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    if(window.location.pathname === '/hakkimizda.html'){
+        document.body.classList.add("hakkimizda-page");
+        headerLinks[1].classList.add("active");
+    }
+
     window.addEventListener("load", updateActivateLink);
     window.addEventListener("hashchange", updateActivateLink);
 });

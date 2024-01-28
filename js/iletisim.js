@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    if(window.location.pathname === '/iletisim.html'){
+        document.body.classList.add("iletisim-page");
+        headerLinks[3].classList.add("active");
+    }
+
     window.addEventListener("load", updateActivateLink);
     window.addEventListener("hashchange", updateActivateLink);
 
