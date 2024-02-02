@@ -157,7 +157,7 @@ header ul li a.active
  /* YANDA GOZUKEN UCGEN KANKA */
 .form::before
 {
-    position: absolute;
+    position: relative;
     top: 10%;
     left: -3.33rem;
     content: "";
@@ -213,7 +213,91 @@ header ul li a.active
     border-radius: 2rem;
     border: none;
     cursor: pointer;
+    margin-bottom: 1.5rem;
 }
+
+/* SOCIAL START */
+
+.form ul
+{
+    /* overflow: hidden; */
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    /* background-color: black; */
+    color: #fff;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.item-deneme a {
+    text-decoration: none;
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: #f0f9fe;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #f0f9fe;
+    overflow: hidden;
+}
+
+  
+.item-deneme a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    scale: 1 0;
+    transform-origin: bottom;
+    transition: scale 0.5s ease;
+}
+  
+.item-deneme:hover a::before {
+    scale: 1 1;
+}
+  
+.icon {
+    font-size: 2rem;
+    color: hsl(203, 92%, 8%);
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.item-deneme a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+  
+.item-deneme:nth-child(1) {
+    --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+}
+.item-deneme:nth-child(2) {
+    --bg-color: #0077b5;
+}
+.item-deneme:nth-child(3) {
+    --bg-color: #ff0000;
+}
+.item-deneme:nth-child(4) {
+    --bg-color: #25D366;
+}
+.item-deneme:nth-child(5) {
+    --bg-color: #3b5998;
+}
+
+  
+
+/* SOCIAL FINISH */
+
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
