@@ -193,3 +193,8 @@ section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
