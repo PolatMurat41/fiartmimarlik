@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-container {
+  /* background-image: url('fiartmimarlik\assets\img\anders-jilden-Sc5RKXLBjGg-unsplash.jpg'); */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh; /* Sayfa yüksekliği için % yerine vh kullanın */
+  position: relative;
+}
+
+.center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo-container {
+  display: inline-block;
+  position: relative;
+   
+}
+
+
+
+.falling-letter {
+  opacity: 0;
+  animation: fallAnimation 1s ease-in-out forwards, mergeAnimation 0.5s ease-in-out forwards;
+  margin-right: 10px; /* Harfler arasındaki boşluğu ayarlayabilirsiniz */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Gölge efekti eklemek için */
+}
+
+#harf3.color-change {
+  animation: colorChange 1s 1.5s ease-in-out forwards;
+}
+
+@keyframes fallAnimation {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes mergeAnimation {
+  to {
+      transform: translateX(0);
+  }
+}
+
+#harf3 {
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(5deg) brightness(95%) contrast(80%);
+}
+
+
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background-color: hwb(60 0% 89%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: underlineAnimation 2s ease-in-out infinite; /* İki saniyede bir tekrarlayan animasyon */
+}
+
+@keyframes underlineAnimation {
+  0%, 100% {
+      transform: scaleX(0);
+  }
+  50% {
+      transform: scaleX(1);
+  }
+}
