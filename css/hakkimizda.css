@@ -132,6 +132,7 @@ span {
     color: var(--main-color);
 }
 .container {
+    
     align-items: center;
     position: relative;
     display: flex;
