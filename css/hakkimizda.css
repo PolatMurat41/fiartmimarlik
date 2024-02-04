@@ -31,11 +31,6 @@ header{
     font-weight: bold;
 }
 
-header.scrolled
-{
-    background: #fff;
-    transition: background 0.5s ease;
-}
 
 header .logo
 {
@@ -46,6 +41,7 @@ header .logo
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 
 /* FIART LOGO ICIN */
 header .logo img
@@ -79,12 +75,23 @@ header ul li a.active
 {
     background: #fff;
     color: black;
+
+
+}
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
 }
 
-
-
-/* DENEME YANILMA HOCAM CSS */
-
+.home-imgHover:hover {
+    background: var(--bg-color);
+    opacity: .8;
+}
 .about {
     display: flex;
     justify-content: center;
@@ -94,20 +101,129 @@ header ul li a.active
     background: var(--second-bg-color);
     padding-bottom: 6rem;
 }
+.heading {
+    position: relative;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+span {
+    color: var(--main-color);
+}
+.container {
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center; /* İstenilen aralıkları ayarlayabilirsiniz */
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* personel resimleri */
+.about-img {
+    position: relative;
+    width: 8em; /* Çember genişliği */
+    height: 8em; /* Çember yüksekliği */
+    border-radius: 50%; /* Çember şekli */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em; /* İsteğe bağlı: Kutular arası boşluk */
+    position: relative; /* Yeni eklenen çemberi pozisyonlandırmak için */
+    
+}
+
+
+.about-img img {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center; /* Resim içeriği çemberin ortasına yerleştirir */
+    border-radius: 50%; /* Çember şekli */
+}
+
+
+
+
+
 
 .about-img .circle-spin {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: .2rem solid var(--second-bg-color);
-    border-bottom: .2rem solid var(--second-bg-color);
-    border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
-    animation: aboutSpinner 8s linear infinite;
+    border: 3px solid #fff; /* İsteğe bağlı: çemberin kenarına beyaz bir çizgi ekler */
+    box-sizing: border-box;
+    animation: dash 2.0s ease-in-out infinite;
+}
+/* personel resimleri */
+
+
+
+
+
+
+
+
+/* info box */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-content {
+    text-align: center;
 }
 
 .about-content {
@@ -135,11 +251,7 @@ header ul li a.active
     width: 0;
 }
 
-@keyframes aboutSpinner {
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
+
 
 .heading {
     position: relative;
@@ -148,53 +260,70 @@ header ul li a.active
     text-align: center;
 }
 
-.animate {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    z-index: 98;
-}
 
-.fiart-img {
-    position: relative;
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.fiart-img img {
-    width: 90%;
-    border-radius: 50%;
-    border: .2rem solid var(--main-color);
-}
-
-.fiart-img .circle-spin {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-top: .2rem solid var(--second-bg-color);
-    border-bottom: .2rem solid var(--second-bg-color);
-    border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
-    animation: aboutSpinner 8s linear infinite;
-}
 
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+@keyframes homeBgText {
+
+    0%,
+    10%,
+    100% {
+        background-position: -33rem 0;
+    }
+
+    65%,
+    85% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes homeCursorText {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    65%,
+    78%,
+    85% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%,
+    81% {
+        opacity: 0;
+    }
+}
+
 @keyframes aboutSpinner {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+@keyframes dash {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+  }

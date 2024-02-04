@@ -43,3 +43,40 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("load", updateActivateLink);
     window.addEventListener("hashchange", updateActivateLink);
 });
+
+
+
+
+function showInfo(employeeInfo, employeeName) {
+    var employeeInfoText = document.getElementById("employeeInfoText");
+    var employeeNameElement = document.getElementById("employeeName");
+    
+    // İlgili bilgileri info-box içinde göster
+    employeeInfoText.innerHTML = employeeInfo;
+    employeeNameElement.innerHTML = employeeName;
+    document.getElementById("infoContainer").style.display = "block";
+}
+
+// Diğer employeeXInfo fonksiyonlarını benzer şekilde güncelleyebilirsiniz
+
+// Örneğin:
+function showEmployee1Info() {
+    showInfo('Çalışan 2 Bilgileri', 'Çalışan 2');
+}
+
+function showEmployee2Info() {
+    showInfo('Çalışan 3 Bilgileri', 'Çalışan 3');
+}
+function showEmployee3Info() {
+    showInfo('Çalışan 3 Bilgileri', 'Çalışan 3');
+}
+function showEmployee4Info() {
+    showInfo('Çalışan 3 Bilgileri', 'Çalışan 3');
+}
+function showEmployee5Info() {
+    showInfo('Çalışan 3 Bilgileri', 'Çalışan 3');
+}
+function showEmployee6Info() {
+    showInfo('Çalışan 3 Bilgileri', 'Çalışan 3');
+}
+.
