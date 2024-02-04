@@ -159,29 +159,28 @@ span {
 /* personel resimleri */
 .about-img {
     position: relative;
-    width: 8em; /* Çember genişliği */
-    height: 8em; /* Çember yüksekliği */
-    border-radius: 50%; /* Çember şekli */
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 2em; /* İsteğe bağlı: Kutular arası boşluk */
-    position: relative; /* Yeni eklenen çemberi pozisyonlandırmak için */
-    
+    margin-right: 2em;
+    margin-bottom: 2em;
+    position: relative;
 }
 
 
+
 .about-img img {
-    align-items: center;
     position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center; /* Resim içeriği çemberin ortasına yerleştirir */
-    border-radius: 50%; /* Çember şekli */
+    object-position: center center;
+    border-radius: 50%;
 }
-
 
 
 
@@ -206,10 +205,26 @@ span {
 
 
 /* info box */
+.info-box {
+    position: absolute;
+   
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(177, 137, 137, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(224, 23, 23, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+}
 
-
-
-
+.about-img:hover .info-box {
+    opacity: 1;
+    visibility: visible;
+}
 
 
 
