@@ -109,7 +109,8 @@ header ul li a.active
     padding: 100px 0;
      */
 
-    height: 70vh;
+    margin-top: 100px;
+    height: 80vh;
     width: 75vw;
     box-shadow: 0 .2rem .5rem #0006;
     display: flex;
