@@ -44,6 +44,20 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("load", updateActivateLink);
     window.addEventListener("hashchange", updateActivateLink);
 
+
+
+    // MAIN-2 ICINDEKI IMAGE SAG SOL
+    const slider = document.querySelector(".slider");
+
+    function activate(e) {
+        const items = document.querySelectorAll(".item");
+        e.target.matches(".next") && slider.append(items[0]);
+        e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+    }
+
+    document.addEventListener("click", activate, false);
+
+
     
 });
 
