@@ -42,4 +42,23 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("load", updateActivateLink);
     window.addEventListener("hashchange", updateActivateLink);
 
+
+    const textarea = document.querySelector("textarea");
+    const counter = document.getElementById("counter");
+    //const maxLength = 50;
+
+    textarea.addEventListener("input", function(e){
+        const target = e.target;
+        const maxLength = target.getAttribute("maxlength");
+
+        const currentLength = target.value.length;
+        counter.innerHTML = `${currentLength} / ${maxLength}`;
+        
+        if (currentLength > maxLength) {
+            target.value = target.value.substring(0, maxLength);
+            counter.innerHTML = `${maxLength} / ${maxLength}`;   
+        }
+})
+
 });
+

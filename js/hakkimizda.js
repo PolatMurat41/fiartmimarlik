@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(window.location.pathname === '/hakkimizda.html'){
         document.body.classList.add("hakkimizda-page");
-        headerLinks[1].classList.add("active");
+        headerLinks[2].classList.add("active");
     }
 
     window.addEventListener("load", updateActivateLink);
