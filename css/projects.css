@@ -150,7 +150,7 @@ header ul li a.active {
   left: 3rem;
   transform: translateY(-50%);
   font: 400 0.85rem helvetica, sans-serif;
-  color: white;
+  color: rgb(215, 25, 25);
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   opacity: 0;
   display: none;
@@ -169,8 +169,8 @@ header ul li a.active {
   & button {
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.1);
-    color: white;
-    border: 2px solid white;
+    color: rgb(215, 25, 25);
+    border: 2px solid rgb(215, 25, 25);
     border-radius: 0.25rem;
     padding: 0.75rem;
     cursor: pointer;
