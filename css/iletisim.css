@@ -1,104 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-
-:root{
-    --primary: #ff0185;
-    --secondary: #091126;
+:root {
+  --primary: #ff0185;
+  --secondary: #091126;
 }
 
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 
   /* HARITA HOCAM */
-  
 }
 
-body{
+body {
   /* min-height: 100vh; */
   height: 100vh;
   overflow-x: hidden;
   background: linear-gradient(#a3aebc, #3f4147);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   justify-content: center;
   display: flex;
   align-items: center;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
-    /* background: yellow;  */
-    background: transparent;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-weight: bold;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  /* background: yellow;  */
+  background: transparent;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: bold;
 }
 
-header.scrolled
-{
-    background: white;
-    transition: background 0.5s ease;
+header.scrolled {
+  background: white;
+  transition: background 0.5s ease;
 }
 
-header .logo
-{
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+header .logo {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* FIART LOGO ICIN */
-header .logo img
-{
-    width: 250px;
-    height: auto;
+header .logo img {
+  width: 250px;
+  height: auto;
 }
 
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header ul li
-{
-    list-style: none;
-    margin-left: 20px;
+header ul li {
+  list-style: none;
+  margin-left: 20px;
 }
 
-header ul li a
-{
-    text-decoration: none;
-    padding: 6px 15px;
-    color: black;
-    border-radius: 20px;
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: black;
+  border-radius: 20px;
 }
 
 header ul li a:hover,
-header ul li a.active
-{
-    background: #fff;
-    color: black;
+header ul li a.active {
+  background: #fff;
+  color: black;
 }
-
 
 /* HARITA HOCAM */
 
 .contact {
-    /* display: flex;
+  /* display: flex;
     width: 75vw;
     height: 70vh;
     top: 0;
@@ -109,39 +99,38 @@ header ul li a.active
     padding: 100px 0;
      */
 
-    margin-top: 100px;
-    height: 80vh;
-    width: 75vw;
-    /* box-shadow: 0 .2rem .5rem #0006; */
-    backdrop-filter: blur(10px);
-    display: flex;
-    overflow: hidden;
-    border-radius: 1rem;
+  margin-top: 100px;
+  height: 80vh;
+  width: 75vw;
+  /* box-shadow: 0 .2rem .5rem #0006; */
+  backdrop-filter: blur(10px);
+  display: flex;
+  overflow: hidden;
+  border-radius: 1rem;
 
-    /* flex: 1; */
-    /* justify-content: center; */
+  /* flex: 1; */
+  /* justify-content: center; */
 }
 
-.map, .form
-{
-    width: 50%;
-    height: 100%;
-    /* border-radius: 1.5rem; */
-    /* background: linear-gradient(#7597de,  #2b1055); */
-    background: linear-gradient(#3f4147,  #a3aebc);
+.map,
+.form {
+  width: 50%;
+  height: 100%;
+  /* border-radius: 1.5rem; */
+  /* background: linear-gradient(#7597de,  #2b1055); */
+  background: linear-gradient(#3f4147, #a3aebc);
 }
 
-.map iframe
-{
-    width: 100%;
-    backdrop-filter: blur(40px);
-    height: 100%;
-    padding: 10px;
-    border-radius: 1.5rem;
+.map iframe {
+  width: 100%;
+  backdrop-filter: blur(40px);
+  height: 100%;
+  padding: 10px;
+  border-radius: 1.5rem;
 }
 
 .form {
-    /* height: 70vh;
+  /* height: 70vh;
     width: 75vw;
     color: white;
     background: black;
@@ -150,161 +139,152 @@ header ul li a.active
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 .2rem .5rem #0006; */
-    /* background: transparent; */
-    
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  /* background: transparent; */
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
- /* YANDA GOZUKEN UCGEN KANKA */
-.form::before
-{
-    position: relative;
-    top: 10%;
-    left: -3.33rem;
-    content: "";
-    width: 0;
-    height: 0;
-    border: 1.4rem solid transparent;
-    border-right: 1.4rem solid #7597de;
-    /* border-right: 1.4rem solid black; */
+/* YANDA GOZUKEN UCGEN KANKA */
+.form::before {
+  position: relative;
+  top: 10%;
+  left: -3.33rem;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 1.4rem solid transparent;
+  border-right: 1.4rem solid #3f4147;
+  /* border-right: 1.4rem solid black; */
 }
 
-.form h1
-{
-    color: black;
-    font: 500 1.8rem sans-serif;
-    padding: 0 2rem;
-    font-weight: bold;
+.form h1 {
+  color: black;
+  font: 500 1.8rem sans-serif;
+  padding: 0 2rem;
+  font-weight: bold;
 }
 
-.form form
-{
-    padding: 0 2rem;
-    font-weight: bold;
+.form form {
+  padding: 0 2rem;
+  font-weight: bold;
 }
 
-.form input, .form textarea
-{
-    width: 100%;
-    padding: 1rem;
-    border: .08rem solid black;
-    border-radius: 2rem;
-    background-color: black;
-    color: #fff;
-    font-size: 1rem;
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 0.08rem solid black;
+  border-radius: 2rem;
+  background-color: black;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.form input:not(:first-child), .form textarea, .form button
-{
-    margin-top: .8rem;
-    /* margin-top: 1.8rem; */
+.form input:not(:first-child),
+.form textarea,
+.form button {
+  margin-top: 0.8rem;
+  /* margin-top: 1.8rem; */
 }
 
-.form textarea
-{
-    height: 6rem;
-    resize: none;
+.form textarea {
+  height: 6rem;
+  resize: none;
 }
 
-.form button
-{
-    background-color: black;
-    padding: 1rem 2rem;
-    color: #fff;
-    border-radius: 2rem;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 1.5rem;
+.form button {
+  background-color: black;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
 }
 
 /* SOCIAL START */
 
-.form ul
-{
-    /* overflow: hidden; */
-    padding: 1rem 2rem;
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-    /* background-color: black; */
-    color: #fff;
-    border-radius: 2rem;
-    border: none;
-    cursor: pointer;
+.form ul {
+  /* overflow: hidden; */
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  /* background-color: black; */
+  color: #fff;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
 }
 
 .item-deneme a {
-    text-decoration: none;
-    width: 4.8rem;
-    height: 4.8rem;
-    background-color: #f0f9fe;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    border: 3px solid #f0f9fe;
-    overflow: hidden;
+  text-decoration: none;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #f0f9fe;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #f0f9fe;
+  overflow: hidden;
 }
 
-  
 .item-deneme a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    z-index: 0;
-    scale: 1 0;
-    transform-origin: bottom;
-    transition: scale 0.5s ease;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: 0;
+  scale: 1 0;
+  transform-origin: bottom;
+  transition: scale 0.5s ease;
 }
-  
+
 .item-deneme:hover a::before {
-    scale: 1 1;
+  scale: 1 1;
 }
-  
+
 .icon {
-    font-size: 2rem;
-    color: hsl(203, 92%, 8%);
-    transition: 0.5s ease;
-    z-index: 2;
+  font-size: 2rem;
+  color: hsl(203, 92%, 8%);
+  transition: 0.5s ease;
+  z-index: 2;
 }
 
 .item-deneme a:hover .icon {
-    color: #fff;
-    transform: rotateY(360deg);
-}
-  
-.item-deneme:nth-child(1) {
-    --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
-}
-.item-deneme:nth-child(2) {
-    --bg-color: #0077b5;
-}
-.item-deneme:nth-child(3) {
-    --bg-color: #ff0000;
-}
-.item-deneme:nth-child(4) {
-    --bg-color: #25D366;
-}
-.item-deneme:nth-child(5) {
-    --bg-color: #3b5998;
+  color: #fff;
+  transform: rotateY(360deg);
 }
 
-  
+.item-deneme:nth-child(1) {
+  --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+}
+.item-deneme:nth-child(2) {
+  --bg-color: #0077b5;
+}
+.item-deneme:nth-child(3) {
+  --bg-color: #ff0000;
+}
+.item-deneme:nth-child(4) {
+  --bg-color: #25d366;
+}
+.item-deneme:nth-child(5) {
+  --bg-color: #3b5998;
+}
 
 /* SOCIAL FINISH */
 
-
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
@@ -312,7 +292,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    border: .08rem solid black;
+  border: 0.08rem solid black;
   -webkit-text-fill-color: #fff;
   -webkit-box-shadow: 0 0 0px 1000px black inset;
   transition: background-color 5000s ease-in-out 0s;
