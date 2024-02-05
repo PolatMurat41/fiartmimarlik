@@ -21,7 +21,7 @@ body{
   /* min-height: 100vh; */
   height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(#2b1055, #7597de);
+  background: linear-gradient(#a3aebc, #3f4147);
   font-family: 'Poppins', sans-serif;
   justify-content: center;
   display: flex;
@@ -112,7 +112,8 @@ header ul li a.active
     margin-top: 100px;
     height: 80vh;
     width: 75vw;
-    box-shadow: 0 .2rem .5rem #0006;
+    /* box-shadow: 0 .2rem .5rem #0006; */
+    backdrop-filter: blur(10px);
     display: flex;
     overflow: hidden;
     border-radius: 1rem;
@@ -125,13 +126,15 @@ header ul li a.active
 {
     width: 50%;
     height: 100%;
-    background-color: purple;
-    background: linear-gradient(#7597de,  #2b1055);
+    /* border-radius: 1.5rem; */
+    /* background: linear-gradient(#7597de,  #2b1055); */
+    background: linear-gradient(#3f4147,  #a3aebc);
 }
 
 .map iframe
 {
     width: 100%;
+    backdrop-filter: blur(40px);
     height: 100%;
     padding: 10px;
     border-radius: 1.5rem;
