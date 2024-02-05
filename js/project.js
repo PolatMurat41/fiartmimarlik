@@ -1,66 +1,72 @@
-
-
-
 //  HEADER SCROLL BEYAZ OLMASI
 document.addEventListener("DOMContentLoaded", function () {
-    var header = document.querySelector("header");
-    var scrollThreshold = 10; // Değişiklik için belirlenen scroll eşiği (pixel cinsinden)
+  var header = document.querySelector("header");
+  var scrollThreshold = 10; // Değişiklik için belirlenen scroll eşiği (pixel cinsinden)
 
-    function updateHeaderBackground() {
-        var scrollPosition = window.scrollY;
+  function updateHeaderBackground() {
+    var scrollPosition = window.scrollY;
 
-        if (scrollPosition > scrollThreshold) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
+    if (scrollPosition > scrollThreshold) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
     }
+  }
 
-    window.addEventListener("scroll", updateHeaderBackground);
+  window.addEventListener("scroll", updateHeaderBackground);
 
-    var headerLinks = document.querySelectorAll("header ul li a");
+  var headerLinks = document.querySelectorAll("header ul li a");
 
-    function updateActivateLink(){
-        var currentURL = window.location.href;
+  function updateActivateLink() {
+    var currentURL = window.location.href;
 
-        headerLinks.forEach(function (link) {
-            var linkURL = link.href;
+    headerLinks.forEach(function (link) {
+      var linkURL = link.href;
 
-            if(currentURL.includes(linkURL) && !link.classList.contains("active")){
-                headerLinks.forEach(function (otherLink){
-                    otherLink.classList.remove("active")
-                });
-
-                link.classList.add("active")
-            }
+      if (currentURL.includes(linkURL) && !link.classList.contains("active")) {
+        headerLinks.forEach(function (otherLink) {
+          otherLink.classList.remove("active");
         });
-    }
 
-    if(window.location.pathname === '/projects.html'){
-        document.body.classList.add("projects-page");
-        headerLinks[1].classList.add("active");
-    }
+        link.classList.add("active");
+      }
+    });
+  }
 
-    window.addEventListener("load", updateActivateLink);
-    window.addEventListener("hashchange", updateActivateLink);
+  if (window.location.pathname === "/projects.html") {
+    document.body.classList.add("projects-page");
+    headerLinks[1].classList.add("active");
+  }
 
+  window.addEventListener("load", updateActivateLink);
+  window.addEventListener("hashchange", updateActivateLink);
 
+  // MAIN-2 ICINDEKI IMAGE SAG SOL
+  /* const slider = document.querySelector(".slider");
 
-    // MAIN-2 ICINDEKI IMAGE SAG SOL
-    const slider = document.querySelector(".slider");
+  function activate(e) {
+    const items = document.querySelectorAll(".item");
+    e.target.matches(".next") && slider.append(items[0]);
+    e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+  }
 
-    function activate(e) {
-        const items = document.querySelectorAll(".item");
-        e.target.matches(".next") && slider.append(items[0]);
-        e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
-    }
+  document.addEventListener("click", activate, false); */
+  const sliders = document.querySelectorAll(".main-2 .slider");
+  const navButtons = document.querySelectorAll(".nav img");
 
-    document.addEventListener("click", activate, false);
+  function activate(e) {
+    sliders.forEach(function (slider) {
+      const items = slider.querySelectorAll(".item");
+      e.target.matches(".next") && slider.append(items[0]);
+      e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+    });
+  }
 
-
-    
+  navButtons.forEach(function (button) {
+    button.addEventListener("click", activate, false);
+  });
+  //document.addEventListener("click", activate, false);
 });
-
 
 //  PROJE SAYFASI SCROLL YAPARKEN YAZILARIN ORTAYA ÇIKISI START
 
@@ -124,6 +130,5 @@ if (unit > section2Start && unit < section2End) {
         l4.classList.remove("active");
     }
 }) */
-
 
 //  PROJE SAYFASI SCROLL YAPARKEN YAZILARIN ORTAYA ÇIKISI FINISH
