@@ -15,6 +15,8 @@ body{
   /* background: linear-gradient(#2b1055, #7597de); */
   background: linear-gradient(#a3aebc, #3f4147);
   font-family: 'Poppins', sans-serif;
+  align-items: center; 
+  justify-content: center;
 }
 
 header{
@@ -28,7 +30,7 @@ header{
     align-items: center;
     z-index: 10000;
     background: transparent;
-    /* font-family: Arial, Helvetica, sans-serif; */
+     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
@@ -111,7 +113,7 @@ header ul li a.active
 
 .heading {
 position: relative;
-font-size: 2rem;
+font-size: 5rem;
 /* margin-bottom: 3rem; */
 text-align: center; }
 
@@ -141,12 +143,73 @@ text-align: center; }
 }
 
 
-/* CARD-GROUP START */
-.info p
-{
-    font-size: 14px;
-    margin-top: 3px;
+
+
+
+
+
+
+
+
+
+
+/* bilgi kutusu */
+
+
+/* .bilgikutusu {
+    display: none;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    z-index: 1;
+} */
+
+.bilgikutusu{
+     display: none; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    z-index: 1;
 }
+
+.image {
+    position: relative;
+    cursor: pointer;
+    
+}
+/* .info{
+    background-color: black;
+} */
+
+
+
+
+/* bilgi kutusu finish */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CARD-GROUP START */
 
 .card-group
 {
@@ -157,6 +220,7 @@ text-align: center; }
     align-items: center;
     justify-content: center;
     margin:5vh ;
+    flex-wrap: wrap;
     
     /* background-color: transparent; */
 
