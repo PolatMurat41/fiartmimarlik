@@ -1,201 +1,279 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Hakkımızda</title>
     <link rel="icon" type="image/x-icon" href="assets/F.ico" />
-    <link rel="stylesheet" type="text/css" href="css/hakkimizda.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/hakkimizda.css" />
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <a href="home.html" class="logo">
-            <img src="assets/img/logo.png" alt="FIART LOGO">
-        </a>
+      <a href="home.html" class="logo">
+        <img src="assets/img/logo.png" alt="FIART LOGO" />
+      </a>
 
-        <ul>
-            <li><a href="home.html">Ana Sayfa</a></li>
-            <li><a href="projects.html">Projeler</a></li>
-            <li><a href="#">Hakkımızda</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-        </ul>
+      <ul>
+        <li><a href="home.html">Ana Sayfa</a></li>
+        <li><a href="projects.html">Projeler</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
     </header>
 
-       
+    <div class="container">
+      <!-- fiart hakkında  -->
+      <div class="about" id="about">
+        <h2 class="heading">
+          FIART <span>Hakkında</span>
+          <span class="animate scroll" style="--i: 1"></span>
+        </h2>
+      </div>
 
+      <!-- personel resimleri1 patronlar card-group -->
 
-
-<div class="container"></div>
-            <!-- fiart hakkında  -->
-            <div class="about" id="about">
-                <h2 class="heading">FIART <span>Hakkında</span> <span class="animate scroll" style="--i:1;"></span> </h2>
-            </div>   
-            
-            <!-- a etiketlerini kaldır -->
-            <!-- personel resimleri1 patronlar card-group -->
-            <div class="card-group" id="card-group">
-    
-                <a href="/hakkimizda.html">
-                    <div class="card">
-                        <img src="assets\pexels-emmy-e-2381069.jpg">
-                        <div class="image" onmouseover="showbilgiBox(1)" onmouseout="hidebilgiBox(1)"></div>
-                        <div class="layer"></div>
-                        <div class="info">
-                            <h1>İç Mimari</h1>
-                            <p>İç Mimari ile alakalı tüm projelerimiz...</p>
-                        </div>                       
-                    </div>
-                </a>
-
-                
-    
-                <a href="/hakkimizda.html">
-                    <div class="card">
-                        <img src="assets\pexels-christina-morillo-1181649.jpg">
-                        <div class="image" onmouseover="showbilgiBox(2)" onmouseout="hidebilgiBox(2)"></div>
-                        <div class="layer"></div>
-                        <div class="info">
-                            <h1>Diş Polikliniği</h1>
-                            <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
-                        </div>                       
-                    </div>
-                </a>               
+      <div class="card-group" id="card-group1">
+        <a>
+          <div class="card">
+            <img src="assets\pexels-emmy-e-2381069.jpg" />
+            <div class="layer"></div>
+            <div class="info">
+              <h1>İç Mimari</h1>
+              <p>İç Mimari ile alakalı tüm projelerimiz...</p>
             </div>
-              
-
-                <!-- bilgi kutusu -->
-                <div class="bilgikutusu" id="bilgiBox">
-                    <p>Buraya Resim ile ilgili bilgiler gelecek.</p>
-                </div>
-            
-                <!-- bilgi kutusu -->
-        
-            <!-- personel resimleri2 calısanlar card-group-->
-            <div class="card-group" id="card-group">
-    
-                <a href="/hakkimizda.html">
-                    <div class="card">
-                        <img src="assets\pexels-emmy-e-2381069.jpg">
-                        <div class="image" onmouseover="showbilgiBox(3)" onmouseout="hidebilgiBox(3)"></div>
-                        <div class="layer"></div>
-                        <div class="info">
-                            <h1>İç Mimari</h1>
-                            <p>İç Mimari ile alakalı tüm projelerimiz...</p>
-                        </div>                       
-                    </div>
-                </a>
-    
-                <a href="/hakkimizda.html">
-                    <div class="card">
-                        <img src="assets\pexels-christina-morillo-1181649.jpg">
-                        <div class="image" onmouseover="showbilgiBox(4)" onmouseout="hidebilgiBox(4)"></div>
-                        <div class="layer"></div>
-                        <div class="info">
-                            <h1>Diş Polikliniği</h1>
-                            <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
-                        </div>                       
-                    </div>
-                </a>
-
-                <a href="/hakkimizda.html">
-                    <div class="card">
-                        <img src="assets\pexels-christina-morillo-1181649.jpg">
-                        <div class="image" onmouseover="showbilgiBox(5)" onmouseout="hidebilgiBox(5)"></div>
-                        <div class="layer"></div>
-                        <div class="info">
-                            <h1>Diş Polikliniği</h1>
-                            <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
-                        </div>                        
-                    </div>
-                </a>
-
-                <a href="/hakkimizda.html">
-                    <div class="card">
-                        <img src="assets\pexels-christina-morillo-1181649.jpg">
-                        <div class="image" onmouseover="showbilgiBox(6)" onmouseout="hidebilgiBox(6)"></div>
-                        <div class="layer"></div>
-                        <div class="info">
-                            <h1>Diş Polikliniği</h1>
-                            <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
-                        </div>                       
-                    </div>
-                </a>
+            <div
+              class="bilgibutton"
+              onmouseover="showbilgiBox(1)"
+              onmouseout="hidebilgiBox(1)"
+            >
+              Bilgi
             </div>
-        <!-- personel resimleri bitis -->
+          </div>
+        </a>
 
-       
-      
-      
-        
-       
-        
-       
-      
-     
+        <a>
+          <div class="card">
+            <img src="assets\pexels-christina-morillo-1181649.jpg" />
+            <div class="layer"></div>
+            <div class="info">
+              <h1>Diş Polikliniği</h1>
+              <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
+            </div>
+            <div
+              class="bilgibutton"
+              onmouseover="showbilgiBox(2)"
+              onmouseout="hidebilgiBox(2)"
+            >
+              Bilgi
+            </div>
+          </div>
+        </a>
 
-        
+        <!-- personel resimleri1 patronlar card-group -->
 
-
-
-
-        <!-- son metin -->
-        <div class="last-text">
-            <h3>Hi there! Glad to see you here.<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>Hello! Nishat Mahmud here. A technology fanatic!<br>
-                Currently, I am enrolled in the Department of
-                Computer Science and Engineering at Jagannath
-                University in Dhaka. My early education was
-                completed from Mymensingh Zilla School and Govt.
-                Ananda Mohon College in Mymensingh.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem perferendis commodi. Blanditiis sequi vitae, maxime architecto alias voluptate aperiam nulla adipisci quod. Dolore corporis soluta illo error officiis nesciunt?
-                Ipsa odit temporibus dolorem in ratione a molestiae officia voluptates autem, ad neque, incidunt laborum qui dolorum? Non ducimus repellendus, aut, neque explicabo rerum voluptatibus excepturi reiciendis delectus porro nobis!
-                Assumenda consequatur dignissimos repudiandae dolor quae nobis, quam ducimus voluptate laborum in maxime perferendis exercitationem amet modi ut praesentium labore. Hic vel aspernatur beatae inventore suscipit obcaecati, debitis cupiditate eligendi!
-                Sed eius aut optio. Deleniti ex perferendis voluptatum magni iusto, quaerat qui, perspiciatis dolorem nemo tenetur laborum velit doloribus consectetur rem corporis hic? Eius eaque praesentium, enim reprehenderit nemo quos?
-                Laudantium quasi dolore rerum mollitia unde fugit, aspernatur error ullam. Dolores hic vitae cumque libero? Minima, reprehenderit dolorum alias ducimus dolores impedit saepe velit sequi molestias dignissimos veniam itaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae odio officia vitae quod fugit mollitia molestiae at dicta Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta totam odio, ullam voluptate iusto tenetur laboriosam, esse illo facilis perferendis ex eos eligendi officiis molestiae doloribus laudantium at ipsum provident.
-                Aperiam, et alias. Dolores hic debitis facere fuga quod culpa vel itaque eaque. Nostrum corporis corrupti reprehenderit aut minima laborum, modi odit? Corrupti id aperiam dicta provident inventore expedita sed?
-                Ex fuga libero, facere ipsam odit corporis laboriosam beatae. Quae, labore aut alias corporis quidem dolorem voluptas odit tenetur voluptatibus praesentium error incidunt quia voluptatem illo nulla, ex quod. Nobis!
-                Rem similique amet alias quasi excepturi iste ullam labore veniam unde, eos consequuntur doloremque consectetur itaque autem rerum soluta. Delectus laborum labore, repellendus magni aperiam obcaecati architecto voluptate reiciendis illum!
-                Ea doloremque tenetur quisquam reiciendis modi! Voluptas quam reiciendis doloremque eveniet tenetur delectus, numquam neque eos facere repellendus illum repellat asperiores quos cumque reprehenderit fuga adipisci. Veritatis eos deleniti amet.
-                Deserunt in, aliquam, voluptatum enim beatae numquam libero suscipit expedita mollitia similique fuga fugit debitis recusandae maxime ipsum saepe minus aperiam. Architecto, asperiores exercitationem minima officia in adipisci explicabo vitae.
-                Nihil pariatur cumque similique, nesciunt porro dolore facilis, maiores labore quidem neque aut incidunt obcaecati officia quibusdam suscipit placeat blanditiis praesentium! Architecto quam cupiditate distinctio aspernatur iusto reiciendis itaque. Obcaecati.
-                Cupiditate accusamus sit ipsam voluptatem doloremque voluptate unde animi amet. Neque maiores soluta voluptate esse? Accusantium sapiente sed ratione et illo nobis nihil repellat tenetur culpa cumque, exercitationem vel ducimus.
-                Quod officia veritatis ullam reprehenderit minus, a ipsum fugit laborum sunt tempore omnis itaque quas quaerat architecto, earum laudantium quae officiis quis similique temporibus! Incidunt nobis commodi repellat odio veniam?
-                Non maxime aut repellendus nam adipisci delectus iste! Necessitatibus, pariatur! Voluptates pariatur repudiandae temporibus blanditiis ab dolorem consectetur, beatae obcaecati voluptatibus consequatur sit maxime omnis, qui laboriosam iste porro ipsam.
-                Tenetur aliquam numquam consectetur cupiditate, suscipit ratione cumque corporis vel omnis, atque ex blanditiis. Excepturi adipisci aspernatur tenetur pariatur ea obcaecati possimus. Corrupti, iure natus laboriosam deserunt veritatis distinctio amet?
-                Libero optio, eaque molestiae vero voluptate autem quae! Nostrum, repudiandae! Cumque maiores debitis exercitationem consequuntur aliquid quibusdam deleniti dolor, adipisci dignissimos error rerum qui odit nam voluptatum molestias eum soluta.
-                Voluptatem ipsa alias animi doloremque atque sequi unde dolor exercitationem corrupti. Dolore mollitia minus fuga nobis ipsum maxime! Accusantium assumenda aspernatur totam a suscipit illo magni modi consequuntur. Et, a.
-                Tempora rem beatae cupiditate officiis fuga quos! Debitis, voluptatem? Consequuntur laborum officia tempore aut exercitationem reprehenderit, nam, molestiae quidem veniam sit minima dolorum commodi aperiam fugiat eum in, optio minus.
-                Eaque, nobis blanditiis, eos illum rem quasi laudantium at excepturi rerum molestiae a quod unde dolor iusto nisi nulla quidem molestias ducimus laborum. Quasi enim perspiciatis eum fuga. Nihil, doloremque.
-                Quidem quo pariatur est voluptates ratione ad nostrum placeat provident id distinctio laboriosam sequi dolores, facilis voluptate. Provident fugiat sequi ratione enim! Vitae eius odio ipsa ipsam recusandae. Corrupti, eius!
-                Dolores id voluptates minima recusandae molestiae amet consequuntur, doloribus, eum mollitia deleniti quis cupiditate suscipit quos sequi consequatur eos alias nobis officia dolorem nulla doloremque totam praesentium temporibus. Itaque, temporibus!
-                Architecto cum, animi ratione fuga quo rerum deleniti. Blanditiis laudantium animi voluptates quisquam provident eius optio cum temporibus pariatur, delectus reiciendis adipisci maiores? Vero itaque quod eius saepe reprehenderit officiis.
-                Eligendi numquam minus, iure, tenetur a nemo minima, asperiores dolores autem doloribus aliquid iusto corrupti? Incidunt accusamus pariatur nulla? Accusantium itaque saepe tempore laboriosam iusto unde voluptates totam? Eius, delectus.
-                Veritatis veniam eligendi beatae iste sed molestias aliquid neque, animi ducimus dolorum corrupti quod temporibus ut et exercitationem, odit vero ratione distinctio laudantium delectus necessitatibus expedita? Doloremque in beatae a!
-                Suscipit cumque qui sunt accusamus aliquam, rerum possimus sapiente dignissimos at sed illum necessitatibus officia molestias tenetur laudantium quam libero! Recusandae dignissimos exercitationem doloremque. Debitis accusantium nemo corrupti eos sunt?
-                Quam, repellendus repudiandae! Reprehenderit illo molestias similique atque quasi consectetur libero necessitatibus at unde ab sequi facilis aut dolorum quam, iusto dolorem sed nemo doloribus aperiam ipsum impedit! Fugiat, nemo.
-                Architecto quisquam eum perferendis, asperiores eaque cupiditate magnam earum animi eos quod magni molestiae beatae ratione est commodi nam laudantium dolor debitis natus itaque, quae at, sed cumque? At, blanditiis.
-                Voluptatibus iure, laborum voluptatem iusto vero, nihil atque nulla tenetur placeat quidem, voluptates aut sequi vitae numquam a! Illo nemo nobis dolores reiciendis in expedita harum pariatur tempora rerum quos?
-                Tempore voluptas quia libero soluta, laboriosam adipisci quos architecto, perspiciatis, provident molestiae praesentium omnis harum tenetur doloribus odio consequatur iure rerum quam sed reprehenderit. Autem pariatur magni harum id consequuntur.
-                Soluta, repudiandae obcaecati nesciunt sed commodi molestias assumenda vitae minima voluptatibus qui fugit deserunt nihil tempore vero reprehenderit vel. Ducimus aliquid ratione natus sequi soluta voluptatem aliquam quia, animi laudantium!
-                Unde consequuntur mollitia obcaecati quo totam dignissimos placeat, eaque, similique aperiam ipsam maiores assumenda libero porro eligendi perspiciatis alias nulla! Exercitationem esse unde nobis quasi accusamus vero, repellat expedita harum?
-                Quas voluptatibus, animi officia necessitatibus possimus tenetur ipsa aliquam. Et ea corporis hic harum dolores aut sint amet fuga praesentium totam eaque explicabo non, veniam voluptates. Magni, accusantium. Laborum, voluptates!
-                Voluptatum incidunt rem natus nobis ratione quidem veniam ullam, beatae, possimus, laudantium eos sequi. Facere ipsum dolore officiis accusantium. Possimus inventore nesciunt quia perferendis, dolores ut repudiandae excepturi hic culpa?
-                Odio eaque iure corporis dicta sed itaque ipsa, facere alias ex quas deserunt ut qui omnis autem voluptate similique fugiat inventore voluptas vel, in distinctio provident vero nostrum! Sit, sint?
-                
-            </p>
-
-           
+        <!-- bilgi kutusu -->
+        <div class="bilgikutusucontainer">
+          <div class="bilgikutusu" id="bilgiBox1">
+            <p>Buraya Resim 1 ile ilgili bilgiler gelecek.</p>
+          </div>
         </div>
-    
+        <div class="bilgikutusu" id="bilgiBox2">
+          <p>Buraya Resim 2 ile ilgili bilgiler gelecek.</p>
+        </div>
+        <div class="bilgikutusu" id="bilgiBox3">
+          <p>Buraya Resim 3 ile ilgili bilgiler gelecek.</p>
+        </div>
+        <div class="bilgikutusu" id="bilgiBox4">
+          <p>Buraya Resim 4 ile ilgili bilgiler gelecek.</p>
+        </div>
+      </div>
+      <!-- bilgi kutusu -->
 
-</div>
+      <!-- personel resimleri2 calısanlar card-group-->
+      <div class="card-group" id="card-group2">
+        <a>
+          <div class="card">
+            <img src="assets\pexels-emmy-e-2381069.jpg" />
+            <div class="layer"></div>
+            <div class="info">
+              <h1>İç Mimari</h1>
+              <p>İç Mimari ile alakalı tüm projelerimiz...</p>
+            </div>
+            <div class="bilgikutusu" id="bilgiBox"></div>
+            <div
+              class="bilgibutton"
+              onmouseover="showbilgiBox(3)"
+              onmouseout="hidebilgiBox(3)"
+            >
+              Bilgi
+            </div>
+          </div>
+        </a>
 
-    
+        <a>
+          <div class="card">
+            <img src="assets\pexels-christina-morillo-1181649.jpg" />
+            <div class="layer"></div>
+            <div class="info">
+              <h1>Diş Polikliniği</h1>
+              <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
+            </div>
+            <div
+              class="bilgibutton"
+              onmouseover="showbilgiBox(4)"
+              onmouseout="hidebilgiBox(4)"
+            >
+              Bilgi
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- personel resimleri bitis -->
 
+      <!-- son metin -->
+      <div class="last-text">
+        <h3>
+          Hi there! Glad to see you here.<span
+            class="animate scroll"
+            style="--i: 3"
+          ></span>
+        </h3>
+        <p>
+          Hello! Nishat Mahmud here. A technology fanatic!<br />
+          Currently, I am enrolled in the Department of Computer Science and
+          Engineering at Jagannath University in Dhaka. My early education was
+          completed from Mymensingh Zilla School and Govt. Ananda Mohon College
+          in Mymensingh. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Rem exercitationem perferendis commodi. Blanditiis sequi vitae,
+          maxime architecto alias voluptate aperiam nulla adipisci quod. Dolore
+          corporis soluta illo error officiis nesciunt? Ipsa odit temporibus
+          dolorem in ratione a molestiae officia voluptates autem, ad neque,
+          incidunt laborum qui dolorum? Non ducimus repellendus, aut, neque
+          explicabo rerum voluptatibus excepturi reiciendis delectus porro
+          nobis! Assumenda consequatur dignissimos repudiandae dolor quae nobis,
+          quam ducimus voluptate laborum in maxime perferendis exercitationem
+          amet modi ut praesentium labore. Hic vel aspernatur beatae inventore
+          suscipit obcaecati, debitis cupiditate eligendi! Sed eius aut optio.
+          Deleniti ex perferendis voluptatum magni iusto, quaerat qui,
+          perspiciatis dolorem nemo tenetur laborum velit doloribus consectetur
+          rem corporis hic? Eius eaque praesentium, enim reprehenderit nemo
+          quos? Laudantium quasi dolore rerum mollitia unde fugit, aspernatur
+          error ullam. Dolores hic vitae cumque libero? Minima, reprehenderit
+          dolorum alias ducimus dolores impedit saepe velit sequi molestias
+          dignissimos veniam itaque Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Adipisci beatae odio officia vitae quod fugit
+          mollitia molestiae at dicta Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Soluta totam odio, ullam voluptate iusto tenetur
+          laboriosam, esse illo facilis perferendis ex eos eligendi officiis
+          molestiae doloribus laudantium at ipsum provident. Aperiam, et alias.
+          Dolores hic debitis facere fuga quod culpa vel itaque eaque. Nostrum
+          corporis corrupti reprehenderit aut minima laborum, modi odit?
+          Corrupti id aperiam dicta provident inventore expedita sed? Ex fuga
+          libero, facere ipsam odit corporis laboriosam beatae. Quae, labore aut
+          alias corporis quidem dolorem voluptas odit tenetur voluptatibus
+          praesentium error incidunt quia voluptatem illo nulla, ex quod. Nobis!
+          Rem similique amet alias quasi excepturi iste ullam labore veniam
+          unde, eos consequuntur doloremque consectetur itaque autem rerum
+          soluta. Delectus laborum labore, repellendus magni aperiam obcaecati
+          architecto voluptate reiciendis illum! Ea doloremque tenetur quisquam
+          reiciendis modi! Voluptas quam reiciendis doloremque eveniet tenetur
+          delectus, numquam neque eos facere repellendus illum repellat
+          asperiores quos cumque reprehenderit fuga adipisci. Veritatis eos
+          deleniti amet. Deserunt in, aliquam, voluptatum enim beatae numquam
+          libero suscipit expedita mollitia similique fuga fugit debitis
+          recusandae maxime ipsum saepe minus aperiam. Architecto, asperiores
+          exercitationem minima officia in adipisci explicabo vitae. Nihil
+          pariatur cumque similique, nesciunt porro dolore facilis, maiores
+          labore quidem neque aut incidunt obcaecati officia quibusdam suscipit
+          placeat blanditiis praesentium! Architecto quam cupiditate distinctio
+          aspernatur iusto reiciendis itaque. Obcaecati. Cupiditate accusamus
+          sit ipsam voluptatem doloremque voluptate unde animi amet. Neque
+          maiores soluta voluptate esse? Accusantium sapiente sed ratione et
+          illo nobis nihil repellat tenetur culpa cumque, exercitationem vel
+          ducimus. Quod officia veritatis ullam reprehenderit minus, a ipsum
+          fugit laborum sunt tempore omnis itaque quas quaerat architecto, earum
+          laudantium quae officiis quis similique temporibus! Incidunt nobis
+          commodi repellat odio veniam? Non maxime aut repellendus nam adipisci
+          delectus iste! Necessitatibus, pariatur! Voluptates pariatur
+          repudiandae temporibus blanditiis ab dolorem consectetur, beatae
+          obcaecati voluptatibus consequatur sit maxime omnis, qui laboriosam
+          iste porro ipsam. Tenetur aliquam numquam consectetur cupiditate,
+          suscipit ratione cumque corporis vel omnis, atque ex blanditiis.
+          Excepturi adipisci aspernatur tenetur pariatur ea obcaecati possimus.
+          Corrupti, iure natus laboriosam deserunt veritatis distinctio amet?
+          Libero optio, eaque molestiae vero voluptate autem quae! Nostrum,
+          repudiandae! Cumque maiores debitis exercitationem consequuntur
+          aliquid quibusdam deleniti dolor, adipisci dignissimos error rerum qui
+          odit nam voluptatum molestias eum soluta. Voluptatem ipsa alias animi
+          doloremque atque sequi unde dolor exercitationem corrupti. Dolore
+          mollitia minus fuga nobis ipsum maxime! Accusantium assumenda
+          aspernatur totam a suscipit illo magni modi consequuntur. Et, a.
+          Tempora rem beatae cupiditate officiis fuga quos! Debitis, voluptatem?
+          Consequuntur laborum officia tempore aut exercitationem reprehenderit,
+          nam, molestiae quidem veniam sit minima dolorum commodi aperiam fugiat
+          eum in, optio minus. Eaque, nobis blanditiis, eos illum rem quasi
+          laudantium at excepturi rerum molestiae a quod unde dolor iusto nisi
+          nulla quidem molestias ducimus laborum. Quasi enim perspiciatis eum
+          fuga. Nihil, doloremque. Quidem quo pariatur est voluptates ratione ad
+          nostrum placeat provident id distinctio laboriosam sequi dolores,
+          facilis voluptate. Provident fugiat sequi ratione enim! Vitae eius
+          odio ipsa ipsam recusandae. Corrupti, eius! Dolores id voluptates
+          minima recusandae molestiae amet consequuntur, doloribus, eum mollitia
+          deleniti quis cupiditate suscipit quos sequi consequatur eos alias
+          nobis officia dolorem nulla doloremque totam praesentium temporibus.
+          Itaque, temporibus! Architecto cum, animi ratione fuga quo rerum
+          deleniti. Blanditiis laudantium animi voluptates quisquam provident
+          eius optio cum temporibus pariatur, delectus reiciendis adipisci
+          maiores? Vero itaque quod eius saepe reprehenderit officiis. Eligendi
+          numquam minus, iure, tenetur a nemo minima, asperiores dolores autem
+          doloribus aliquid iusto corrupti? Incidunt accusamus pariatur nulla?
+          Accusantium itaque saepe tempore laboriosam iusto unde voluptates
+          totam? Eius, delectus. Veritatis veniam eligendi beatae iste sed
+          molestias aliquid neque, animi ducimus dolorum corrupti quod
+          temporibus ut et exercitationem, odit vero ratione distinctio
+          laudantium delectus necessitatibus expedita? Doloremque in beatae a!
+          Suscipit cumque qui sunt accusamus aliquam, rerum possimus sapiente
+          dignissimos at sed illum necessitatibus officia molestias tenetur
+          laudantium quam libero! Recusandae dignissimos exercitationem
+          doloremque. Debitis accusantium nemo corrupti eos sunt? Quam,
+          repellendus repudiandae! Reprehenderit illo molestias similique atque
+          quasi consectetur libero necessitatibus at unde ab sequi facilis aut
+          dolorum quam, iusto dolorem sed nemo doloribus aperiam ipsum impedit!
+          Fugiat, nemo. Architecto quisquam eum perferendis, asperiores eaque
+          cupiditate magnam earum animi eos quod magni molestiae beatae ratione
+          est commodi nam laudantium dolor debitis natus itaque, quae at, sed
+          cumque? At, blanditiis. Voluptatibus iure, laborum voluptatem iusto
+          vero, nihil atque nulla tenetur placeat quidem, voluptates aut sequi
+          vitae numquam a! Illo nemo nobis dolores reiciendis in expedita harum
+          pariatur tempora rerum quos? Tempore voluptas quia libero soluta,
+          laboriosam adipisci quos architecto, perspiciatis, provident molestiae
+          praesentium omnis harum tenetur doloribus odio consequatur iure rerum
+          quam sed reprehenderit. Autem pariatur magni harum id consequuntur.
+          Soluta, repudiandae obcaecati nesciunt sed commodi molestias assumenda
+          vitae minima voluptatibus qui fugit deserunt nihil tempore vero
+          reprehenderit vel. Ducimus aliquid ratione natus sequi soluta
+          voluptatem aliquam quia, animi laudantium! Unde consequuntur mollitia
+          obcaecati quo totam dignissimos placeat, eaque, similique aperiam
+          ipsam maiores assumenda libero porro eligendi perspiciatis alias
+          nulla! Exercitationem esse unde nobis quasi accusamus vero, repellat
+          expedita harum? Quas voluptatibus, animi officia necessitatibus
+          possimus tenetur ipsa aliquam. Et ea corporis hic harum dolores aut
+          sint amet fuga praesentium totam eaque explicabo non, veniam
+          voluptates. Magni, accusantium. Laborum, voluptates! Voluptatum
+          incidunt rem natus nobis ratione quidem veniam ullam, beatae,
+          possimus, laudantium eos sequi. Facere ipsum dolore officiis
+          accusantium. Possimus inventore nesciunt quia perferendis, dolores ut
+          repudiandae excepturi hic culpa? Odio eaque iure corporis dicta sed
+          itaque ipsa, facere alias ex quas deserunt ut qui omnis autem
+          voluptate similique fugiat inventore voluptas vel, in distinctio
+          provident vero nostrum! Sit, sint?
+        </p>
+      </div>
+    </div>
 
-    <script src="js/hakkimizda.js"></script>
-
-</body>
-
+    <script src="js\hakkimizda.js"></script>
+  </body>
 </html>
