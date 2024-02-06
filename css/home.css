@@ -14,10 +14,10 @@ body {
   background: linear-gradient(#a3aebc, #3f4147);
   font-family: "Poppins", sans-serif;
 
-  /* width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
+  /* FATMA ISMAIL ICIN (CONTAINER TASIDIM) */
+  /* justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d; */
 }
 
 /* #navbar.active {
@@ -326,3 +326,54 @@ section img#mountains_front {
 }
 
 /* CARD-GROUP FINISH */
+
+/* ISMAIL FATIMA START */
+
+.container {
+  padding: 100px;
+  /* BODY OLMASI GEREKIYOR BURAYA ALDIM */
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+.box {
+  position: relative;
+  width: 15vw;
+  height: 40vh;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+  transform: perspective(1000px) rotateY(0deg);
+  animation: animatefi 3s linear infinite;
+}
+@keyframes animatef {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 180deg)) translateZ(300px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, transparent);
+}
+.box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  user-select: none;
+}
+
+/* ISMAIL FATIMA FINISH */
