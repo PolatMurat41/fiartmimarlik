@@ -22,17 +22,26 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+<<<<<<< HEAD
 
   padding: 30px 100px;
   /* degısıklık alttaki */
   /* padding: 20px 100px; */
 
+=======
+  padding: 30px 100px;
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
+<<<<<<< HEAD
   /* background: transparent; */
   /* font-family: Arial, Helvetica, sans-serif; */
+=======
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
   font-weight: bold;
 }
 
@@ -48,6 +57,7 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+<<<<<<< HEAD
 
   /* degısıklık */
   height: 63.28px;
@@ -64,18 +74,33 @@ header .logo img {
   max-width: 100%;
 
   /* margin-right: 10px; */
+=======
+}
+
+/* FIART LOGO ICIN */
+header .logo img {
+  width: 250px;
+  height: auto;
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
 }
 
 header ul {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 header ul li {
+=======
+}
+
+header ul li {
+  list-style: none;
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
   margin-left: 20px;
 }
 
@@ -143,6 +168,7 @@ header ul li a.active {
   font-size: 1.2em;
   z-index: 9;
   transform: translateY(100px);
+<<<<<<< HEAD
 }
 
 /* bilgi kutusu */
@@ -178,6 +204,40 @@ header ul li a.active {
     background-color: black;
 } */
 
+=======
+}
+
+/* bilgi kutusu  start */
+
+.bilgikutusu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 15px;
+  z-index: 999;
+  display: none;
+}
+
+.bilgiBox {
+  background-color: #e9e0e0;
+}
+
+.bilgikutusu p {
+  background-color: rgb(233, 226, 226);
+}
+.bilgibutton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+}
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
 /* bilgi kutusu finish */
 
 /* CARD-GROUP START */
@@ -252,6 +312,11 @@ header ul li a.active {
 
 /* CARD-GROUP FINISH */
 
+<<<<<<< HEAD
+=======
+/* last text */
+
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
 .last-text {
   position: relative;
   padding: 100px;
@@ -265,3 +330,8 @@ h3 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+
+/* last text */
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
