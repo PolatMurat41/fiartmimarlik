@@ -29,8 +29,20 @@ body {
   position: relative;
    
 }
+.ikbal{
+  position: relative;
+  bottom: 0;
+  animation: pngAnimasyonu 2s ease-out;
+}
 
 
+
+
+@keyframes pngAnimasyonu {
+  to {
+      bottom: 40%; /* Ekranın üst kısmına kadar gelene kadar */
+  }
+}
 
 .falling-letter {
   opacity: 0;
@@ -71,6 +83,7 @@ body {
   left: 0;
   animation: underlineAnimation 2s ease-in-out infinite; /* İki saniyede bir tekrarlayan animasyon */
 }
+
 
 @keyframes underlineAnimation {
   0%, 100% {
