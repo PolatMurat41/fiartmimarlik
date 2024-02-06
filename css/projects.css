@@ -9,7 +9,8 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(#2b1055, #7597de);
+  /* background: linear-gradient(#2b1055, #7597de); */
+  background: linear-gradient(#3f4147, #a3aebc);
   font-family: "Poppins", sans-serif;
 }
 
@@ -18,7 +19,11 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+
   padding: 30px 100px;
+  /* degısıklık alttaki */
+  /* padding: 20px 100px; */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,22 +40,35 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  /* degısıklık */
+  height: 63.28px;
+  width: 200px;
+  align-items: center;
 }
 
 /* FIART LOGO ICIN */
 header .logo img {
-  width: 250px;
+  /* width: 250px; */
   height: auto;
+
+  /* degısıklık */
+  max-width: 100%;
+
+  /* margin-right: 10px; */
 }
 
 header ul {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 header ul li {
-  list-style: none;
   margin-left: 20px;
 }
 

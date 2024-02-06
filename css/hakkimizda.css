@@ -22,13 +22,26 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+<<<<<<< HEAD
+
   padding: 30px 100px;
+  /* degısıklık alttaki */
+  /* padding: 20px 100px; */
+
+=======
+  padding: 30px 100px;
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
+<<<<<<< HEAD
+  /* background: transparent; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+=======
   background: transparent;
   font-family: Arial, Helvetica, sans-serif;
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
   font-weight: bold;
 }
 
@@ -44,22 +57,50 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+<<<<<<< HEAD
+
+  /* degısıklık */
+  height: 63.28px;
+  width: 200px;
+  align-items: center;
+}
+
+/* FIART LOGO ICIN */
+header .logo img {
+  /* width: 250px; */
+  height: auto;
+
+  /* degısıklık */
+  max-width: 100%;
+
+  /* margin-right: 10px; */
+=======
 }
 
 /* FIART LOGO ICIN */
 header .logo img {
   width: 250px;
   height: auto;
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
 }
 
 header ul {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+=======
 }
 
 header ul li {
   list-style: none;
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
   margin-left: 20px;
 }
 
@@ -127,6 +168,43 @@ header ul li a.active {
   font-size: 1.2em;
   z-index: 9;
   transform: translateY(100px);
+<<<<<<< HEAD
+}
+
+/* bilgi kutusu */
+
+/* .bilgikutusu {
+    display: none;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    z-index: 1;
+} */
+
+.bilgikutusu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.image {
+  position: relative;
+  cursor: pointer;
+}
+/* .info{
+    background-color: black;
+} */
+
+=======
 }
 
 /* bilgi kutusu  start */
@@ -155,6 +233,7 @@ header ul li a.active {
 
   cursor: pointer;
 }
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
 /* bilgi kutusu finish */
 
 /* CARD-GROUP START */
@@ -229,8 +308,11 @@ header ul li a.active {
 
 /* CARD-GROUP FINISH */
 
+<<<<<<< HEAD
+=======
 /* last text */
 
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
 .last-text {
   position: relative;
   padding: 100px;
@@ -244,5 +326,8 @@ h3 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
 
 /* last text */
+>>>>>>> 31796e9b997b49f5c5d4649a342ea50d6c36c574
