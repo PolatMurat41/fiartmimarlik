@@ -137,26 +137,22 @@ header ul li a.active {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  padding: 15px;
+  padding: 10vh;
   z-index: 999;
   display: none;
 }
 
-.bilgiBox {
-  background-color: #e9e0e0;
+.bilgikutusu p {
+  background-color: rgb(124, 45, 45);
 }
 
-.bilgikutusu p {
-  background-color: rgb(233, 226, 226);
-}
 .bilgibutton {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
   background-color: #3498db;
-  color: #fff;
-  padding: 0.3rem 0.5rem;
+  color: #853434;
+
   cursor: pointer;
 }
 /* bilgi kutusu finish */

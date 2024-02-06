@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="assets/F.ico" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/hakkimizda.css" />
   </head>
@@ -34,48 +34,48 @@
       </div>
 
       <!-- personel resimleri1 patronlar card-group -->
+      <div class="container mt-5">
+        <div class="card-group" id="card-group1">
+          <a>
+            <div class="card">
+              <img src="assets\pexels-emmy-e-2381069.jpg" />
+              <div class="layer"></div>
+              <div class="info">
+                <h1>İç Mimari</h1>
+                <p>İç Mimari ile alakalı tüm projelerimiz...</p>
+              </div>
+              <div
+                class="bilgibutton"
+                onmouseover="showbilgiBox(1)"
+                onmouseout="hidebilgiBox(1)"
+              >
+              <img src="assets\info.png" alt="Bilgi Iconu">  
+              </div>
+            </div>
+          </a>
 
-      <div class="card-group" id="card-group1">
-        <a>
-          <div class="card">
-            <img src="assets\pexels-emmy-e-2381069.jpg" />
-            <div class="layer"></div>
-            <div class="info">
-              <h1>İç Mimari</h1>
-              <p>İç Mimari ile alakalı tüm projelerimiz...</p>
+          <a>
+            <div class="card">
+              <img src="assets\pexels-christina-morillo-1181649.jpg" />
+              <div class="layer"></div>
+              <div class="info">
+                <h1>Diş Polikliniği</h1>
+                <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
+              </div>
+              <div
+                class="bilgibutton"
+                onmouseover="showbilgiBox(2)"
+                onmouseout="hidebilgiBox(2)"
+              >
+              <img src="assets\info.ico" alt="Bilgi Iconu"> 
+              </div>
             </div>
-            <div
-              class="bilgibutton"
-              onmouseover="showbilgiBox(1)"
-              onmouseout="hidebilgiBox(1)"
-            >
-              Bilgi
-            </div>
-          </div>
-        </a>
-
-        <a>
-          <div class="card">
-            <img src="assets\pexels-christina-morillo-1181649.jpg" />
-            <div class="layer"></div>
-            <div class="info">
-              <h1>Diş Polikliniği</h1>
-              <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
-            </div>
-            <div
-              class="bilgibutton"
-              onmouseover="showbilgiBox(2)"
-              onmouseout="hidebilgiBox(2)"
-            >
-              Bilgi
-            </div>
-          </div>
-        </a>
-
+          </a>
+        </div>
         <!-- personel resimleri1 patronlar card-group -->
 
         <!-- bilgi kutusu -->
-        <div class="bilgikutusucontainer">
+        
           <div class="bilgikutusu" id="bilgiBox1">
             <p>Buraya Resim 1 ile ilgili bilgiler gelecek.</p>
           </div>
@@ -93,43 +93,44 @@
       <!-- bilgi kutusu -->
 
       <!-- personel resimleri2 calısanlar card-group-->
-      <div class="card-group" id="card-group2">
-        <a>
-          <div class="card">
-            <img src="assets\pexels-emmy-e-2381069.jpg" />
-            <div class="layer"></div>
-            <div class="info">
-              <h1>İç Mimari</h1>
-              <p>İç Mimari ile alakalı tüm projelerimiz...</p>
-            </div>
-            <div class="bilgikutusu" id="bilgiBox"></div>
-            <div
-              class="bilgibutton"
+      <div class="container mt-5">
+        <div class="card-group" id="card-group2">
+          <a>
+            <div class="card">
+              <img src="assets\pexels-emmy-e-2381069.jpg" />
+              <div class="layer"></div>
+              <div class="info">
+                <h1>İç Mimari</h1>
+                <p>İç Mimari ile alakalı tüm projelerimiz...</p>
+              </div>
+              <div class="bilgikutusu" id="bilgiBox"></div>
+              <div class="bilgibutton" 
               onmouseover="showbilgiBox(3)"
               onmouseout="hidebilgiBox(3)"
             >
-              Bilgi
+              <img src="assets\info.png" alt="Bilgi Iconu"> 
             </div>
-          </div>
-        </a>
+            </div>
+          </a>
 
-        <a>
-          <div class="card">
-            <img src="assets\pexels-christina-morillo-1181649.jpg" />
-            <div class="layer"></div>
-            <div class="info">
-              <h1>Diş Polikliniği</h1>
-              <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
+          <a>
+            <div class="card">
+              <img src="assets\pexels-christina-morillo-1181649.jpg" />
+              <div class="layer"></div>
+              <div class="info">
+                <h1>Diş Polikliniği</h1>
+                <p>Diş Polikliniği ile alakalı tüm projelerimiz...</p>
+              </div>
+              <div
+                class="bilgibutton"
+                onmouseover="showbilgiBox(4)"
+                onmouseout="hidebilgiBox(4)"
+              >
+              <img src="assets\info.png" alt="Bilgi Iconu">   
+              </div>
             </div>
-            <div
-              class="bilgibutton"
-              onmouseover="showbilgiBox(4)"
-              onmouseout="hidebilgiBox(4)"
-            >
-              Bilgi
-            </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
       <!-- personel resimleri bitis -->
 
@@ -273,6 +274,10 @@
         </p>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="js\hakkimizda.js"></script>
   </body>
