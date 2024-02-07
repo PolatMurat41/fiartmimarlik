@@ -62,7 +62,7 @@ function showbilgiBox(index) {
   
     function hidebilgiBox() {
       // Tüm bilgikutusu div'lerini gizle
-      for (var i = 1; i <= 4; i++) {
+      for (var i = 1; i <= 6; i++) {
         var bilgiBox = document.getElementById('bilgiBox' + i);
         bilgiBox.style.display = 'none';
       }

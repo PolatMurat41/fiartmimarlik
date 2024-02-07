@@ -68,9 +68,6 @@ body {
   }
 }
 
-#harf3 {
-  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(5deg) brightness(95%) contrast(80%);
-}
 
 
 
