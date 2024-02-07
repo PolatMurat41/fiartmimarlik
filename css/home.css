@@ -77,10 +77,10 @@ header {
   font-weight: bold;
 }
 
-/* header.scrolled {
-  background: #ffffff;
+header.scrolled {
+  background: #fff;
   transition: background 0.5s ease;
-} */
+}
 
 header .logo {
   color: #fff;
@@ -263,7 +263,7 @@ section img#mountains_front {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: purple;
+  /* background-color: purple; */
 
   padding: 2%;
   /* background: #1c0522; */
@@ -336,17 +336,13 @@ section img#mountains_front {
   justify-content: center;
   /* background-color: yellow; */
   padding: 2%;
+  position: relative;
 }
 .box {
-  width: 225px;
+  width: 500px;
   height: 50vh;
   /* overflow: hidden; */
-  /* position: relative; */
   transition: 0.5s;
-}
-.container h1 {
-  padding: 10%;
-  color: #2b1055;
 }
 
 .box img {
@@ -356,6 +352,38 @@ section img#mountains_front {
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
+}
+
+.content {
+  position: relative;
+  width: 50%;
+  padding: 10px;
+}
+
+.content.left {
+  left: -20px;
+  /* padding: 10px; */
+}
+
+.content.right {
+  right: -20px;
+  /* margin: auto; */
+}
+
+.content h1,
+.content p,
+.content h4 {
+  color: #fff;
+  font-weight: bold;
+  /* background-color: aqua; */
+}
+
+.content h1,
+.content h4 {
+  text-align: center;
+}
+.content h4 {
+  text-decoration: underline;
 }
 
 .container #fatima {
