@@ -424,4 +424,16 @@ section img#mountains_front {
   }
 }
 
+/* TYPEWRITE EFFECT */
+.cursor {
+  display: inline-block;
+  animation: blink-caret 0.75s infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* ISMAIL FATIMA FINISH */
