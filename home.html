@@ -145,7 +145,7 @@
         </a>
 
         <a href="/projects.html">
-          <div class="card">
+          <div class="card" onclick="navigateToBeautyProjects()">
             <img src="assets/img/home/galata.jpg" />
 
             <div class="layer"></div>
@@ -170,7 +170,7 @@
           </div>
         </a>
 
-        <a href="/projects.html">
+        <a href="/projects.html#main-2-beauty">
           <div class="card">
             <img src="assets/img/home/dis-mimari-2.jpg" />
 
@@ -213,6 +213,12 @@
         </p>
       </div>
     </div>
+
+    <script>
+      function navigateToBeautyProjects() {
+        window.location.href = "projects.html#main-2-beauty";
+      }
+    </script>
 
     <script src="js/home.js"></script>
   </body>

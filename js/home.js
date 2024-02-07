@@ -129,3 +129,18 @@ function typeWriterIsmail() {
 }
 
 typeWriterIsmail();
+
+// SCROLL YAPINCA CONTAINER BASINA GELMESI
+document.getElementById("btn").addEventListener("click", function (event) {
+  event.preventDefault(); // Prevents the default behavior of the link
+
+  const container = document.getElementById("container");
+  const headerHeight = document.querySelector("header").offsetHeight; // Get the height of the header
+  const containerOffset = container.offsetTop - headerHeight; // Subtract the header height from the container offset
+
+  // Scroll to the container position minus the header height
+  window.scrollTo({
+    top: containerOffset,
+    behavior: "smooth", // Optional: Smooth scrolling effect
+  });
+});
