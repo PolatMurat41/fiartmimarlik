@@ -26,7 +26,7 @@
     <div class="main">
       <div class="main-1">
         <!-- VİLLA -->
-        <div class="main-2">
+        <div class="main-2 main-2-villa">
           <ul class="slider">
             <li
               class="item"
@@ -133,7 +133,7 @@
         </div>
 
         <!-- GÜZELLİK MERKEZİ -->
-        <div class="main-2">
+        <div class="main-2" id="main-2-beauty">
           <ul class="slider">
             <li
               class="item"
@@ -544,7 +544,7 @@
 
     <script src="js/project.js"></script>
 
-    <!-- <script>
+    <script>
       function next(t) {
         let elm = t.parentElement.parentElement.children[0];
         let item = elm.getElementsByClassName("item");
@@ -556,6 +556,22 @@
         let item = elm.getElementsByClassName("item");
         elm.prepend(item[item.length - 1]);
       }
-    </script> -->
+    </script>
+    <script>
+      const sliders = document.querySelectorAll(".main-2 .slider");
+      const navButtons = document.querySelectorAll(".nav img");
+
+      function activate(e) {
+        sliders.forEach(function (slider) {
+          const items = slider.querySelectorAll(".item");
+          e.target.matches(".next") && slider.append(items[0]);
+          e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+        });
+      }
+
+      navButtons.forEach(function (button) {
+        button.addEventListener("click", activate, false);
+      });
+    </script>
   </body>
 </html>

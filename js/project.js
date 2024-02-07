@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("hashchange", updateActivateLink);
 
   // SLİDER BUTTON HER MAIN-2 DE CALISIYOR
-  const sliders = document.querySelectorAll(".main-2 .slider");
+  /* const sliders = document.querySelectorAll(".main-2 .slider");
   const navButtons = document.querySelectorAll(".nav img");
 
   function activate(e) {
@@ -55,5 +55,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navButtons.forEach(function (button) {
     button.addEventListener("click", activate, false);
-  });
+  }); */
 });
