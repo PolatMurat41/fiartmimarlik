@@ -30,7 +30,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-
+  
   padding: 30px 100px;
   /* degısıklık alttaki */
   /* padding: 20px 100px; */
@@ -115,6 +115,7 @@ header ul li a.active {
   gap: 2rem;
   background: var(--second-bg-color);
   padding-bottom: 6rem;
+  
 }
 .about-content {
   text-align: center;
@@ -182,13 +183,14 @@ height: 100vh;
 
 .baslik {
   text-align: center;
+  align-items: center;
 }
  
 
 .muratcontainer{
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height:100vh;
   
   align-items: center;
   justify-content: center;
@@ -196,8 +198,8 @@ height: 100vh;
 }
 
 .card-group {
-  display:flex;
-  width: 80%;  
+  
+  width: 55%;  
   align-items: center;
   justify-content: center; 
   /* margin: 5vh; */
@@ -205,12 +207,16 @@ height: 100vh;
   
    padding: 20px; 
   
-  /* background-color: transparent; */
-  /* background-color:rgb(102, 100, 100) ; */
-  /* padding: 1%; */
-  /* background: #1c0522; */
-  
+
+
 }
+#card-group1{
+  
+  width: 25%;
+}
+
+
+
 .card {
   /* justify-content: center; */
   
@@ -230,12 +236,13 @@ height: 100vh;
   
 
 .bilgikutusu-group{
+  
   position: relative;
   align-items: center;
   justify-content: center;
 /* background-color: rgb(122, 145, 134); */
 margin: 50px;
-width:30vw ;
+width:50% ;
 height: 40vh;
 /* border: 3px solid black; */
 }
@@ -243,6 +250,7 @@ height: 40vh;
 
 
 .bilgikutusu{
+  display: none;
   background-color: rgb(128, 192, 176);
   position: absolute;
   text-align: center;

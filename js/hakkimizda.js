@@ -48,20 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
 // bilgi kutusu
 function showbilgiBox(index) {
     // Tüm bilgikutusu div'lerini gizle
-    hideAllbilgiBox();
+    hidebilgiBox();
 
     // Sadece ilgili bilgikutusu div'ini göster
     var bilgiBox = document.getElementById('bilgiBox' + index);
     bilgiBox.style.display = 'block';
   }
 
-  function hideAllbilgiBox() {
-    // Tüm bilgikutusu div'lerini gizle
-    for (var i = 1; i <=4; i++) {
-        var bilgiBox = document.getElementById('bilgiBox' + i);
-        bilgiBox.style.display = 'none';
-      }
-    }
+ 
   
     function hidebilgiBox() {
       // Tüm bilgikutusu div'lerini gizle
