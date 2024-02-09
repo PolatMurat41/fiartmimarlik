@@ -1,21 +1,29 @@
+
+
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 * {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  
   scroll-behavior: smooth;
 }
 
 body {
+ 
   min-height: 100vh;
   overflow-x: hidden;
   /* background: linear-gradient(#2b1055, #7597de); */
+ 
   background: linear-gradient(#a3aebc, #3f4147);
   font-family: "Poppins", sans-serif;
-  align-items: center;
-  justify-content: center;
+  align-items: center; 
+ justify-content: center;
+  
 }
+
 
 header {
   position: fixed;
@@ -133,19 +141,24 @@ header ul li a.active {
   position: absolute;
   /* right: -50px; */
   /* color: #1c0522; */
-  color: #fff;
+  color: #fdf7f7;
   /*color: black;*/
   white-space: nowrap;
   font-size: 7.5vw;
   z-index: 9;
 }
-
+.card h1{
+  color: rgb(51, 131, 228);
+}
+p{
+  color:rgb(242, 248, 242);
+}
 #btn {
   text-decoration: none;
   display: inline-block;
   padding: 8px 30px;
   border-radius: 40px;
-  background: #fff;
+  background: #1f1212;
   color: #2b1055;
   font-size: 1.2em;
   z-index: 9;
@@ -153,84 +166,104 @@ header ul li a.active {
 }
 
 
+.section-aboutcompany{
+  height: 100vh;
+}
+.section-ourmision{
+height: 100vh;
+}
 
 
+.section-eleman{
+  background-color: rgb(141, 202, 187);
+  height: 100vh;
+}
+/* genellayout */
+
+.baslik {
+  text-align: center;
+}
+ 
+
+.muratcontainer{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.card-group {
+  display:flex;
+  width: 80%;  
+  align-items: center;
+  justify-content: center; 
+  /* margin: 5vh; */
+   gap: 1.6rem;
+  
+   padding: 20px; 
+  
+  /* background-color: transparent; */
+  /* background-color:rgb(102, 100, 100) ; */
+  /* padding: 1%; */
+  /* background: #1c0522; */
+  
+}
+.card {
+  /* justify-content: center; */
+  
+  position: relative;
+  /* width: 100%; */
+  height:33vh;
+  border-radius: 16px !important; 
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer; 
+  background-color: rgb(247, 246, 246);
+  border: 3px solid black !important ;
+  /* background-size: contain; */
+  
+}
+
+  
+
+.bilgikutusu-group{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+/* background-color: rgb(122, 145, 134); */
+margin: 50px;
+width:30vw ;
+height: 40vh;
+/* border: 3px solid black; */
+}
+
+
+
+.bilgikutusu{
+  background-color: rgb(128, 192, 176);
+  position: absolute;
+  text-align: center;
+  /* border: 0.2px solid rgb(158, 146, 146); */
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);
+}
+/* .bilgikutusu img{
+  width:100% ;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+} */
 
 
 /* genellayout */
 
 
-/* bilgi kutusu start */
-.bilgikutusu-group{
-  /* display: block; */
-  /* height: 20px; */
-  /* text-align: center;  */
-  margin-bottom:100 px;   /*baslangıcı margin delemedi*/
-  margin-left: 800px;
-  height: 80px;  /*alttakine aynı seyı yazınca calısmadı*/
-  /* margin-bottom:100x ; */
-}
-.bilgikutusu {
-  /* display: block; */
-  display: block;
-  height: 80px;
-  position:absolute;
-  align-items: center;
-  justify-content: center;
-  /* background-color: #c7b4b4; */
-  margin: auto;
-  background-color: #4a5747;
-  /* border: 1px solid #ccc; */
-  /* z-index: 1; */
-   /* margin: 0 auto;  */
-  color:rgb(202, 223, 9);
-  
-}
-
-
-/* 
-.bilgikutusu p {
-  background-color: rgb(124, 45, 45);
-  justify-content: center;
-} */
-
-
-
-/* bilgi kutusu finish */
-
-
 /* CARD-GROUP START */
-.card-group {
-  display:flex;
-  width: 100%;  
-  align-items: center;
-  justify-content: center;
-  /* margin: 5vh; */
-  gap: 1.6rem;
-  /* flex: 1; */
-  background-color: transparent;
-  /* padding: 1%; */
-  /* background: #1c0522; */
-}
-#card-group1{
-  width: 50%;
-  
-}
-/* #card-group2{
-  width: 200%;
-} */
 
-.card {
-  /* justify-content: center; */
-  
-  position: relative;
-  width: 10vh;
-  height:33vh;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: 0.5s;
-  cursor: pointer; 
-}
+
+
 
 .card img {
   
@@ -281,6 +314,9 @@ header ul li a.active {
 /* last text */
 
 .last-text {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   position: relative;
   padding: 2vh;
 }

@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("hashchange", updateActivateLink);
 });
 
+
+
+
 // bilgi kutusu
-showbilgiBox(1);
-
-
 function showbilgiBox(index) {
     // Tüm bilgikutusu div'lerini gizle
     hideAllbilgiBox();
@@ -70,4 +70,4 @@ function showbilgiBox(index) {
         bilgiBox.style.display = 'none';
       }
     }
-// bilgi kutusu
+
