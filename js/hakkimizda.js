@@ -65,3 +65,76 @@ function showbilgiBox(index) {
       }
     }
 
+
+//counter part deneme
+
+// const counts=document.querySelectorAll(".count")
+// const speed=97
+// counts.forEach((counter)=> {
+//   function  upData(){
+//     const target=Number(counter.getAttribute('data-target'))
+//     const count =Number(counter.innerHTML)
+//     const inc=target/speed
+//     if(count<target){
+//       counter.innerHTML=inc+count
+//       setTimeout(upData,8)
+//     }else{
+//       counter.innerHTML=target
+//     }
+//   }
+//   upData()
+
+// })
+
+
+//counter part 2
+
+// const myNum = document.querySelectorAll('.count')
+// // console.log(myNum.innerText)
+// let speed = 1;
+
+// myNum.forEach( (myCount) => {
+    
+    
+//     let target_count = myCount.dataset.count;
+//     let init_count = +myCount.innerText;
+//     // console.log(target_count)
+    
+//     let new_increment_num = Math.floor(target_count / speed);
+    
+//     const updateNumber = () => {
+//         init_count +=  new_increment_num;
+//         myCount.innerText = init_count;
+        
+//         if(init_count < target_count){
+//             setTimeout(() => {updateNumber()}, 5)
+//         }
+//     }
+    
+//     updateNumber();
+    
+// })
+const myNum = document.querySelectorAll('.count');
+const animationDuration = 1000; // Animasyonun toplam süresi (ms)
+const framesPerSecond = 30; // Saniyedeki çerçeve sayısı
+
+myNum.forEach((myCount) => {
+    let target_count = parseInt(myCount.dataset.count);
+    let init_count = +myCount.innerText;
+
+    let increment = (target_count - init_count) / (animationDuration / 1000 * framesPerSecond);
+    let current_count = init_count;
+
+    const updateNumber = () => {
+        current_count += increment;
+        if (current_count < target_count) {
+            myCount.innerText = Math.round(current_count); // Sayıyı yuvarlayarak güncelleyin
+            setTimeout(updateNumber, 3000 / framesPerSecond);
+        } else {
+            myCount.innerText = target_count; // Hedef sayıya ulaşıldığında doğrudan hedef sayıyı ayarlayın
+        }
+    }
+
+    updateNumber();
+});
+
