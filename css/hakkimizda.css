@@ -169,7 +169,7 @@ p{
 
 /* section */
 .misyonumuz{  
-  background: url("assets\img\dis-mimari.jpg");
+  background: url("./assets/img/dis-mimari.jpg");
   height: 100vh;
   background-color: #52534d;
   color: rgb(3, 3, 3);
@@ -179,7 +179,7 @@ p{
   
 }
 .counterlayout{
-  margin-top: 55vh;
+  margin-top: 40vh;
   justify-content: center;
   display: flex;
   text-align: center;
@@ -192,14 +192,34 @@ p{
 }
 .baslik{
   text-align: center;
+  padding-block: 5vh;
 }
 .misyonumuz h1,P{
   justify-content: center;
   color: #0e0d0d;
   font-weight: 700;
 }
+.misyonmetin{
+  display: block;
+  text-align: center;
+  padding-block: 5vh;
+  height: 10vh;
+  width: 40vw;
+  margin:auto ;
+  opacity: 0; 
+  animation: slideFromLeft 1s ease forwards; 
+}
 
-
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 
 
 
