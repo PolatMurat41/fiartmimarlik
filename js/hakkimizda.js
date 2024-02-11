@@ -46,24 +46,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // bilgi kutusu
-function showbilgiBox(index) {
-    // Tüm bilgikutusu div'lerini gizle
-    hidebilgiBox();
+// function showbilgiBox(index) {
+//     // Tüm bilgikutusu div'lerini gizle
+//     hidebilgiBox();
 
-    // Sadece ilgili bilgikutusu div'ini göster
-    var bilgiBox = document.getElementById('bilgiBox' + index);
-    bilgiBox.style.display = 'block';
-  }
+//     // Sadece ilgili bilgikutusu div'ini göster
+//     var bilgiBox = document.getElementById('bilgiBox' + index);
+//     bilgiBox.style.display = 'block';
+//   }
 
  
   
-    function hidebilgiBox() {
-      // Tüm bilgikutusu div'lerini gizle
-      for (var i = 1; i <= 7; i++) {
-        var bilgiBox = document.getElementById('bilgiBox' + i);
-        bilgiBox.style.display = 'none';
-      }
+//     function hidebilgiBox() {
+//       // Tüm bilgikutusu div'lerini gizle
+//       for (var i = 1; i <= 7; i++) {
+//         var bilgiBox = document.getElementById('bilgiBox' + i);
+//         bilgiBox.style.display = 'none';
+//       }
+//     }
+
+//elemlarlar baslik animasyon
+document.addEventListener("DOMContentLoaded", function() {
+  var elemanBaslik = document.querySelector('.eleman-baslik');
+  
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function animateElement() {
+    if (isElementInViewport(elemanBaslik)) {
+      elemanBaslik.classList.add('slideIn');
+      document.removeEventListener('scroll', animateElement);
     }
+  }
+
+  document.addEventListener('scroll', animateElement);
+});
+
 
 
 //counter part deneme
@@ -136,5 +161,29 @@ myNum.forEach((myCount) => {
     }
 
     updateNumber();
+});
+
+//button animation
+document.addEventListener("DOMContentLoaded", function() {
+  var elemanBaslik = document.querySelector('.btn');
+  
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function animateElement() {
+    if (isElementInViewport(elemanBaslik)) {
+      elemanBaslik.classList.add('slideIn');
+      document.removeEventListener('scroll', animateElement);
+    }
+  }
+
+  document.addEventListener('scroll', animateElement);
 });
 
