@@ -46,24 +46,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // bilgi kutusu
-function showbilgiBox(index) {
-    // Tüm bilgikutusu div'lerini gizle
-    hidebilgiBox();
+// function showbilgiBox(index) {
+//     // Tüm bilgikutusu div'lerini gizle
+//     hidebilgiBox();
 
-    // Sadece ilgili bilgikutusu div'ini göster
-    var bilgiBox = document.getElementById('bilgiBox' + index);
-    bilgiBox.style.display = 'block';
-  }
+//     // Sadece ilgili bilgikutusu div'ini göster
+//     var bilgiBox = document.getElementById('bilgiBox' + index);
+//     bilgiBox.style.display = 'block';
+//   }
 
  
   
-    function hidebilgiBox() {
-      // Tüm bilgikutusu div'lerini gizle
-      for (var i = 1; i <= 7; i++) {
-        var bilgiBox = document.getElementById('bilgiBox' + i);
-        bilgiBox.style.display = 'none';
-      }
-    }
+//     function hidebilgiBox() {
+//       // Tüm bilgikutusu div'lerini gizle
+//       for (var i = 1; i <= 7; i++) {
+//         var bilgiBox = document.getElementById('bilgiBox' + i);
+//         bilgiBox.style.display = 'none';
+//       }
+//     }
 
 
 //counter part deneme
