@@ -241,15 +241,17 @@ header ul li a.active {
 
 
 /* section */
-.referanslar{
+/* .referanslar{
 height: 100vh;
 background-color: rgb(123, 212, 212);
+} */
+.fiartınhikayesi{
+  height: 100vh;
 }
-
 
 .section-eleman{
   background-color: rgb(204, 206, 205);
-  height: 130vh;
+  height: 100vh;
   width: 100%;
 }
 /* section */
@@ -258,23 +260,89 @@ background-color: rgb(123, 212, 212);
  
 
 .muratcontainer{   
-  margin: 0;
-  height:100%;
+  
+  height:90vh;
   width: 100%;
   display:flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  object-fit: cover;
   /* justify-content: center;  */
   
 }
-.eleman-baslik {
-  margin-top:2vh;
+.topdivs{
+  display:grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+}
+#card-group1{
   display: flex;
+  justify-content: center;
+  
+  padding: 1%;
+  width: 100%;  
+  grid-column: 2;
+}
+/* .iletisinbtn{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:30% !important;
+  grid-column: 1;
+
+} */
+.btn{
+  /* margin-left: 10vw !important; */
+   width: 30%;
+  margin-left: 20vw ;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  background: rgb(151, 148, 148);
+  border: 2px solid black;
+  opacity: 0;
+  
+
+ 
+
+}
+
+
+
+.eleman-baslik {
+  margin-bottom:5vh; 
   text-align: center;
   align-items: center;
   /* background-color:rgb(236, 233, 233) ; */
+  width: 100%;
+  opacity: 0;
   
 }
+.slideIn{
+  animation: slideFromLeft 1s ease forwards;
+}
+@keyframes kaydir {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+/* .eleman-baslik:hover{
+  animation:kaydir 0.5s ease forwards;
+} */
+
+
 .eleman-baslik h2{
   display: inline-block;
   text-align: center;
@@ -295,10 +363,7 @@ background-color: rgb(123, 212, 212);
   padding: 1%;
    
 }
-#card-group1{
-  
-  width: 30%;  
-}
+
 #card-group2{
     width: 60%;
 }
@@ -393,6 +458,12 @@ p{
 .card:hover img {
   filter: blur(5px); /* Hover olduğunda blur efekti */
 }
+
+
+
+
+
+
 
 /* CARD-GROUP FINISH */
 
