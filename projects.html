@@ -27,6 +27,26 @@
       <div class="main-1">
         <!-- VİLLA -->
         <div class="main-2 main-2-villa">
+          <div id="imagePopup" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img
+              src="assets/img/anders-jilden-Sc5RKXLBjGg-unsplash.jpg"
+              alt="Resim 1"
+              class="popup-img"
+            />
+            <img
+              src="assets/img/business-concept-with-team-close-up.jpg"
+              alt="Resim 2"
+              class="popup-img"
+            />
+            <img
+              src="assets/img/business-people-teamwork.jpg"
+              alt="Resim 3"
+              class="popup-img"
+            />
+            <a class="popup-prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="popup-next" onclick="changeImage(1)">&#10095;</a>
+          </div>
           <ul class="slider">
             <li
               class="item"
@@ -41,7 +61,8 @@
                   Tempore fuga voluptatum, iure corporis inventore praesentium
                   nisi. Id laboriosam ipsam enim.
                 </p>
-                <button>Read More</button>
+                <!-- <button>Read More</button> -->
+                <button onclick="openPopup()">Resimleri Göster</button>
               </div>
             </li>
 
