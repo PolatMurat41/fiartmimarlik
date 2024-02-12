@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
   /* background: linear-gradient(#2b1055, #7597de); */
  
-  background: linear-gradient(#a3aebc, #3f4147);
+  /* background: linear-gradient(#a3aebc, #3f4147); */
   font-family: "Poppins", sans-serif;
   align-items: center; 
  justify-content: center;
@@ -165,13 +165,14 @@ header ul li a.active {
 /* section */
 .misyonumuz{   
   height: 100vh;
-  background-color: #52534d;
+  /* background-color: #52534d; */
   color: rgb(3, 3, 3);
   /* display: flex; */
   justify-content: center;
   align-items: center;
   
 }
+
 .counterlayout{
   background-position: center;
   background-repeat: no-repeat;
@@ -222,7 +223,7 @@ header ul li a.active {
   animation: slideFromLeft 1s ease forwards; 
 }
 .misyonmetin h3{
-  color: white;
+  color: rgb(20, 20, 20);
 }
 
 @keyframes slideFromLeft {
@@ -236,23 +237,191 @@ header ul li a.active {
   }
 }
 .count{
-  color: rgb(255, 252, 252);
+  color: rgb(0, 0, 0);
+  font-weight: 1000;
 }
 
 
-/* section */
-/* .referanslar{
-height: 100vh;
-background-color: rgb(123, 212, 212);
+
+
+/* footer section start */
+.footer{
+  height: 40vh;
+  width: 100% ;
+  /* background-color: black; */
+  
+  
+  
+}
+.referanslar{
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.slider{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: white;
+  /* box-shadow:0 10px 20px -10px rgba(3, 3, 3, 0.2); */
+  overflow: hidden;
+}
+.slide{
+  gap: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  animation: slideshow 10s linear infinite;
+  
+}
+.slide img{
+  height: 100%;
+  padding: 0 30px 0 30px;
+
+}
+@keyframes slideshow{ 
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.slider::before,
+.slider::after{
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content:"";
+  background: linear-gradient(to right,white 0%,rgba(255,255,225,0)100%);
+  z-index: 2;
+}
+.slider::before{
+  left: 0;
+  right: 0;
+}
+.slider::after{
+  right: 0;
+  top:0;
+  transform:rotateZ(180deg);
+}
+
+
+.footerbilgi{
+  display: flex;
+  background-color: #8b8989;
+  height: 40vh;
+  width: 100%;
+  
+  gap: 10px;
+ 
+ 
+}
+.maps{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+  margin-top:2vh;
+  margin-bottom:2vh;
+  margin-left:2vw ;
+  margin-right:2vw ;
+  padding: 4%;
+  /* border: 3px solid rgb(12, 0, 0); */
+  box-shadow: 10px #000000;
+}
+.maps iframe{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px ;
+  border: solid 1px #020202;
+}
+.adresslayout{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-left:2vw ;
+  margin-right:2vw ;
+}
+.adress{
+ width: 30%;
+}
+.fa-map-pin{
+  font-size: 6vh;
+  align-items: center; 
+
+}
+/* .counterlayout{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding: 5vw;
+}
+
+  
+
+.counter{
+  
+  width: 30%;
 } */
-.fiartınhikayesi{
-  height: 100vh;
-}
+ /* footerbilgi 3 addres yan yana altlarında 3 telefon numarası bu ortadaki kısım son kısım ıse sosyal medya hesapları sıyah beyazz
+ ve senı en yukarıya goturen up oku butonu olucak 
+ counter e kesik background 
+ telefon uyarlamaları olucak
+ referanslardakı animasyon hatasını gider 
+ renkleri düzelt
+ giris animasyona bak  */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-eleman{
   background-color: rgb(204, 206, 205);
-  height: 100vh;
+  height: 140vh; 
   width: 100%;
+  
+  
 }
 /* section */
 
@@ -261,7 +430,7 @@ background-color: rgb(123, 212, 212);
 
 .muratcontainer{   
   
-  height:90vh;
+  height:130vh;
   width: 100%;
   display:flex;
   flex-direction: column;
@@ -298,14 +467,14 @@ background-color: rgb(123, 212, 212);
 } */
 .btn{
   /* margin-left: 10vw !important; */
-   width: 30%;
-  margin-left: 20vw ;
+   width: 50%;
+  margin-left: 10vw ;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  background: rgb(151, 148, 148);
+  background: rgb(164, 167, 164);
   border: 2px solid black;
   opacity: 0;
   
@@ -317,7 +486,8 @@ background-color: rgb(123, 212, 212);
 
 
 .eleman-baslik {
-  margin-bottom:5vh; 
+  margin-top:7vh; 
+  margin-bottom: 4vh;
   text-align: center;
   align-items: center;
   /* background-color:rgb(236, 233, 233) ; */
@@ -370,19 +540,25 @@ background-color: rgb(123, 212, 212);
 #card-group3{
   width:48% ;
 }
+#card-group4{
+  width: 36%;
+}
 #card-group1 .card{
   height: 32vh;  
   object-fit: cover;
 }
 #card-group2 .card{
-  height: 15vh;  
+  height: 25vh !important;  
   object-fit: cover;
 }
 #card-group3 .card{
-  height: 15vh;
+  height: 25vh !important; 
   object-fit: cover;
 }
-
+#card-group4 .card{
+  height: 25vh !important; 
+  object-fit: cover;
+}
 .card {
   justify-content: center !important;
   align-items: center !important;   
@@ -436,8 +612,9 @@ background-color: rgb(123, 212, 212);
   font-weight: 9000;
 }
 p{
-  color:rgb(255, 254, 254);
+  color:rgb(59, 56, 56);
   font-weight: 9000;
+  font-size: large;
 }
 
 
@@ -469,21 +646,8 @@ p{
 
 /* last text */
 
-.last-text {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  padding: 2vh;
-}
-h3 {
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
+
+
+
 
 /* last text */
