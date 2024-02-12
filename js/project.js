@@ -57,3 +57,37 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", activate, false);
   }); */
 });
+
+//  POPUP START
+
+var currentImageIndex = 0;
+var images = document.getElementsByClassName("popup-img");
+
+function openPopup() {
+  document.getElementById("imagePopup").style.display = "block";
+  showImage(currentImageIndex);
+}
+
+function closePopup() {
+  document.getElementById("imagePopup").style.display = "none";
+}
+
+function showImage(index) {
+  for (var i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  images[index].style.display = "block";
+  currentImageIndex = index;
+}
+
+function changeImage(n) {
+  var newIndex = currentImageIndex + n;
+  if (newIndex >= images.length) {
+    newIndex = 0; // Döngüye devam et
+  } else if (newIndex < 0) {
+    newIndex = images.length - 1; // Son resme git
+  }
+  showImage(newIndex);
+}
+
+//  POPUP FINISH
