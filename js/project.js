@@ -32,30 +32,23 @@ popupButtons.forEach((button) => {
   });
 });
 
-function next(t) {
-  const slider = t.parentElement.parentElement.querySelector(".slider");
+function moveSlider(t, direction) {
+  const main2 = t.closest(".main-2");
+  const slider = main2.querySelector(".slider");
   const items = slider.querySelectorAll(".item");
-  slider.appendChild(items[0]);
-}
 
-function prev(t) {
-  const slider = t.parentElement.parentElement.querySelector(".slider");
-  const items = slider.querySelectorAll(".item");
-  slider.prepend(items[items.length - 1]);
-}
-
-const navButtons = document.querySelectorAll(".nav img");
-
-function activate(e) {
-  const slider = e.target.parentElement.parentElement.querySelector(".slider");
-  const items = slider.querySelectorAll(".item");
-  if (e.target.classList.contains("next")) {
+  if (direction === "next") {
     slider.appendChild(items[0]);
-  } else if (e.target.classList.contains("prev")) {
+  } else if (direction === "prev") {
     slider.prepend(items[items.length - 1]);
   }
 }
 
-navButtons.forEach((button) => {
-  button.addEventListener("click", activate);
+const main2NavButtons = document.querySelectorAll(".main-2 .nav img");
+
+main2NavButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const direction = this.classList.contains("next") ? "next" : "prev";
+    moveSlider(this, direction);
+  });
 });

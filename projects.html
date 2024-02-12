@@ -27,12 +27,17 @@
       <div class="main-1">
         <!-- VİLLA -->
         <div class="main-2 main-2-villa">
+          <nav class="nav">
+            <img class="btn prev" src="assets/prev.ico" alt="" />
+            <img class="btn next" src="assets/next.ico" alt="" />
+          </nav>
           <div id="imagePopup" class="popup">
             <span class="close" onclick="closePopup()">&times;</span>
             <img id="popupImg" class="popup-img" />
             <a class="popup-prev" onclick="changeImage(-1)">&#10094;</a>
             <a class="popup-next" onclick="changeImage(1)">&#10095;</a>
           </div>
+
           <ul class="slider">
             <li
               class="item"
@@ -158,6 +163,10 @@
 
         <!-- GÜZELLİK MERKEZİ -->
         <div class="main-2" id="main-2-beauty">
+          <nav class="nav">
+            <img class="btn prev" src="assets/prev.ico" alt="" />
+            <img class="btn next" src="assets/next.ico" alt="" />
+          </nav>
           <ul class="slider">
             <li
               class="item"
@@ -560,15 +569,15 @@
           </ul>
         </div>
       </div>
-      <nav class="nav">
+      <!-- <nav class="nav">
         <img class="btn prev" src="assets/prev.ico" alt="" />
         <img class="btn next" src="assets/next.ico" alt="" />
-      </nav>
+      </nav> -->
     </div>
 
     <script src="js/project.js"></script>
 
-    <script>
+    <!-- <script>
       function next(t) {
         let elm = t.parentElement.parentElement.children[0];
         let item = elm.getElementsByClassName("item");
@@ -596,6 +605,6 @@
       navButtons.forEach(function (button) {
         button.addEventListener("click", activate, false);
       });
-    </script>
+    </script> -->
   </body>
 </html>
