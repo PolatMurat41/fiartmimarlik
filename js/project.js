@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //  POPUP START
 
-var currentImageIndex = 0;
+/* var currentImageIndex = 0;
 var images = document.getElementsByClassName("popup-img");
 
 function openPopup() {
@@ -88,6 +88,65 @@ function changeImage(n) {
     newIndex = images.length - 1; // Son resme git
   }
   showImage(newIndex);
+} */
+
+// deneme
+
+// Butonları ve popup resmi tanımlayın
+const buttons = document.querySelectorAll(".popup-button");
+const popupImg = document.getElementById("popupImg");
+
+// Butonlara tıklama olaylarını dinleyin
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const images = this.dataset.images.split(", "); // Butona ait resimleri alın
+    openPopup(images[0]); // İlk resmi aç
+    this.dataset.currentIndex = 0; // Butona ait açık olan resmin dizinini sakla
+    this.dataset.images = images; // Butona ait resimlerin listesini sakla
+  });
+});
+
+// Popup'ı açmak için bir fonksiyon tanımlayın
+function openPopup(imageSrc) {
+  popupImg.src = imageSrc;
+  document.getElementById("imagePopup").style.display = "block";
 }
+
+// Popup'ı kapatan fonksiyon (Örnek olarak)
+function closePopup() {
+  document.getElementById("imagePopup").style.display = "none";
+}
+
+// Önceki resme geçiş fonksiyonu
+function prevImage() {
+  const currentIndex = parseInt(this.dataset.currentIndex);
+  const images = document
+    .querySelector(".popup-button")
+    .dataset.images.split(", ");
+  let newIndex = (currentIndex - 1 + images.length) % images.length;
+  updateImage(images[newIndex], newIndex);
+}
+
+// Sonraki resme geçiş fonksiyonu
+function nextImage() {
+  const currentIndex = parseInt(
+    document.querySelector(".popup-button").dataset.currentIndex
+  );
+  const images = document
+    .querySelector(".popup-button")
+    .dataset.images.split(", ");
+  let newIndex = (currentIndex + 1) % images.length;
+  updateImage(images[newIndex], newIndex);
+}
+
+// Resmi güncelleme fonksiyonu
+function updateImage(imageSrc, index) {
+  popupImg.src = imageSrc;
+  document.querySelector(".popup-button").dataset.currentIndex = index;
+}
+
+// Butonlara tıklama olaylarını dinleyin
+document.querySelector(".popup-prev").addEventListener("click", prevImage);
+document.querySelector(".popup-next").addEventListener("click", nextImage);
 
 //  POPUP FINISH

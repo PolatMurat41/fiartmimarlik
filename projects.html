@@ -29,21 +29,7 @@
         <div class="main-2 main-2-villa">
           <div id="imagePopup" class="popup">
             <span class="close" onclick="closePopup()">&times;</span>
-            <img
-              src="assets/img/anders-jilden-Sc5RKXLBjGg-unsplash.jpg"
-              alt="Resim 1"
-              class="popup-img"
-            />
-            <img
-              src="assets/img/business-concept-with-team-close-up.jpg"
-              alt="Resim 2"
-              class="popup-img"
-            />
-            <img
-              src="assets/img/business-people-teamwork.jpg"
-              alt="Resim 3"
-              class="popup-img"
-            />
+            <img id="popupImg" class="popup-img" />
             <a class="popup-prev" onclick="changeImage(-1)">&#10094;</a>
             <a class="popup-next" onclick="changeImage(1)">&#10095;</a>
           </div>
@@ -62,7 +48,12 @@
                   nisi. Id laboriosam ipsam enim.
                 </p>
                 <!-- <button>Read More</button> -->
-                <button onclick="openPopup()">Resimleri Göster</button>
+                <button
+                  class="popup-button"
+                  data-images="assets/img/projects/Model3_86.jpg, assets/img/projects\projeler-test02.jpg, assets\img\projects\projeler-test03.jpg"
+                >
+                  Resim Seti 1
+                </button>
               </div>
             </li>
 
@@ -79,7 +70,13 @@
                   Tempore fuga voluptatum, iure corporis inventore praesentium
                   nisi. Id laboriosam ipsam enim.
                 </p>
-                <button>Read More</button>
+                <!-- <button>Read More</button> -->
+                <button
+                  class="popup-button"
+                  data-images="assets/img/projects/villa/villa-1-01.jpg, assets/img/projects/villa/villa-1-02.jpg, assets/img/projects/villa/villa-1-03.jpg"
+                >
+                  KEŞFET
+                </button>
               </div>
             </li>
 
@@ -96,7 +93,13 @@
                   Tempore fuga voluptatum, iure corporis inventore praesentium
                   nisi. Id laboriosam ipsam enim.
                 </p>
-                <button>Read More</button>
+                <!-- <button>Read More</button> -->
+                <button
+                  class="popup-button"
+                  data-images="assets/img/projects/projeler-test03.jpg, assets\img\projects\projeler-test02.jpg, assets\img\projects\Model3_86.jpg"
+                >
+                  Resim Seti 2
+                </button>
               </div>
             </li>
 
