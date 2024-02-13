@@ -214,6 +214,7 @@ section img#mountains_front {
   z-index: 9;
 }
 
+/* aşağı doğru oklar */
 #btn {
   position: absolute;
   bottom: 50px;
@@ -258,20 +259,6 @@ section img#mountains_front {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
   }
-}
-
-/* .arrow {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transform: rotate(45deg);
-} */
-
-.genel {
-  /* background: linear-gradient(to top, #1c0522, transparent); */
-  /* background-color: #BDB76B; */
 }
 
 .sec {
@@ -401,19 +388,17 @@ section img#mountains_front {
 
 /* ISMAIL FATIMA START */
 
-.container {
+/* .container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: yellow; */
   padding: 2%;
   position: relative;
-}
-.box {
+} */
+/* .box {
   width: 500px;
   height: 50vh;
-  /* overflow: hidden; */
   transition: 0.5s;
 }
 
@@ -434,12 +419,10 @@ section img#mountains_front {
 
 .content.left {
   left: -20px;
-  /* padding: 10px; */
 }
 
 .content.right {
   right: -20px;
-  /* margin: auto; */
 }
 
 .content h1,
@@ -447,7 +430,6 @@ section img#mountains_front {
 .content h4 {
   color: #fff;
   font-weight: bold;
-  /* background-color: aqua; */
 }
 
 .content h1,
@@ -465,15 +447,12 @@ section img#mountains_front {
 @keyframes fatima {
   0% {
     transform: translateX(-10px);
-    /* opacity: 0.9; */
   }
   50% {
     transform: translateX(-1px);
-    /* opacity: 1; */
   }
   100% {
     transform: translateX(-10px);
-    /* opacity: 0.9; */
   }
 }
 
@@ -484,19 +463,55 @@ section img#mountains_front {
 @keyframes ismail {
   0% {
     transform: translateX(10px);
-    /* opacity: 1; */
   }
   50% {
     transform: translateX(1px);
-    /* opacity: 1; */
   }
   100% {
     transform: translateX(10px);
-    /* opacity: 1; */
   }
-}
+} */
 
 /* TYPEWRITE EFFECT */
+/* .cursor {
+  display: inline-block;
+  animation: blink-caret 0.75s infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+} */
+
+/* ISMAIL FATIMA FINISH */
+
+/* ISMAIL FATIMA YENI START */
+
+.wrapper {
+  margin: 100px auto;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper img {
+  max-width: 320px;
+  float: left;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.text-box {
+  color: #fff;
+}
+.text-box h2 {
+  text-align: center;
+  font-size: 42px;
+}
+.text-box p {
+  font-size: 16px;
+}
+
 .cursor {
   display: inline-block;
   animation: blink-caret 0.75s infinite;
@@ -508,4 +523,4 @@ section img#mountains_front {
   }
 }
 
-/* ISMAIL FATIMA FINISH */
+/* ISMAIL FATIMA YENI FINISH */
