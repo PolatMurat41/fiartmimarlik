@@ -18,7 +18,7 @@ body {
   /* min-height: 100vh; */
   height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(#a3aebc, #3f4147);
+  background: linear-gradient(#a3aebc, #2c2d2e);
   font-family: "Poppins", sans-serif;
   justify-content: center;
   display: flex;
@@ -134,10 +134,11 @@ header ul li a.active {
 
 .map iframe {
   width: 100%;
-  backdrop-filter: blur(40px);
+  /* backdrop-filter: blur(40px); */
   height: 100%;
   padding: 10px;
   border-radius: 1.5rem;
+  filter: grayscale(50%) invert(100%);
 }
 
 .form {

@@ -107,7 +107,7 @@ function typeWriterFatima() {
 typeWriterFatima();
 
 // Typewriter Effect for ismail
-const ismailElement = document.querySelector(".ismail");
+/* const ismailElement = document.querySelector(".ismail");
 const ismailText = ismailElement.textContent.trim();
 const ismailInterval = 100;
 
@@ -128,19 +128,21 @@ function typeWriterIsmail() {
   type();
 }
 
-typeWriterIsmail();
+typeWriterIsmail(); */
 
 // SCROLL YAPINCA CONTAINER BASINA GELMESI
 document.getElementById("btn").addEventListener("click", function (event) {
-  event.preventDefault(); // Prevents the default behavior of the link
+  event.preventDefault(); // Linkin varsayılan davranışını engeller
 
-  const container = document.getElementById("container");
-  const headerHeight = document.querySelector("header").offsetHeight; // Get the height of the header
-  const containerOffset = container.offsetTop - headerHeight; // Subtract the header height from the container offset
+  const landingPageEnd =
+    document.querySelector(".landingpage").offsetHeight +
+    document.querySelector(".landingpage").offsetTop;
+  const headerHeight = document.querySelector("header").offsetHeight; // Header yüksekliğini al
+  const scrollToPosition = landingPageEnd - headerHeight; // Header yüksekliğini landing page bitişinden çıkar
 
-  // Scroll to the container position minus the header height
+  // Belirli bir konuma kaydır
   window.scrollTo({
-    top: containerOffset,
-    behavior: "smooth", // Optional: Smooth scrolling effect
+    top: scrollToPosition,
+    behavior: "smooth", // İsteğe bağlı: Yumuşak kaydırma efekti
   });
 });

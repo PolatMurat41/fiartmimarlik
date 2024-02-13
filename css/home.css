@@ -58,6 +58,57 @@ body {
     color: #2b1055;
   } */
 
+/* VIDEO START */
+.landingpage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-content h1 {
+  color: rgb(0, 0, 0);
+  /* font-weight: 600; */
+  font-size: 50px;
+  transition: 0.5s;
+}
+.video-content h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.videobackground {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.videoplayer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+@media (min-aspect-ratio: 16/9) {
+  .videoplayer {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .videoplayer {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* VIDEO END */
+
 header {
   position: fixed;
   top: 0;
@@ -185,21 +236,51 @@ section img#mountains_front {
   z-index: 9;
 }
 
+/* aşağı doğru oklar */
 #btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   text-decoration: none;
   display: inline-block;
   padding: 8px 30px;
   border-radius: 40px;
-  background: #fff;
   color: #2b1055;
   font-size: 1.2em;
   z-index: 9;
-  transform: translateY(100px);
-}
 
-.genel {
-  /* background: linear-gradient(to top, #1c0522, transparent); */
-  /* background-color: #BDB76B; */
+  /* top: 50%;
+  transform: translate(-50%, -50%); */
+}
+#btn span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: arrows 2s infinite;
+}
+#btn span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+#btn span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes arrows {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
 
 .sec {
@@ -329,19 +410,17 @@ section img#mountains_front {
 
 /* ISMAIL FATIMA START */
 
-.container {
+/* .container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: yellow; */
   padding: 2%;
   position: relative;
-}
-.box {
+} */
+/* .box {
   width: 500px;
   height: 50vh;
-  /* overflow: hidden; */
   transition: 0.5s;
 }
 
@@ -362,12 +441,10 @@ section img#mountains_front {
 
 .content.left {
   left: -20px;
-  /* padding: 10px; */
 }
 
 .content.right {
   right: -20px;
-  /* margin: auto; */
 }
 
 .content h1,
@@ -375,7 +452,6 @@ section img#mountains_front {
 .content h4 {
   color: #fff;
   font-weight: bold;
-  /* background-color: aqua; */
 }
 
 .content h1,
@@ -393,15 +469,12 @@ section img#mountains_front {
 @keyframes fatima {
   0% {
     transform: translateX(-10px);
-    /* opacity: 0.9; */
   }
   50% {
     transform: translateX(-1px);
-    /* opacity: 1; */
   }
   100% {
     transform: translateX(-10px);
-    /* opacity: 0.9; */
   }
 }
 
@@ -412,19 +485,55 @@ section img#mountains_front {
 @keyframes ismail {
   0% {
     transform: translateX(10px);
-    /* opacity: 1; */
   }
   50% {
     transform: translateX(1px);
-    /* opacity: 1; */
   }
   100% {
     transform: translateX(10px);
-    /* opacity: 1; */
   }
-}
+} */
 
 /* TYPEWRITE EFFECT */
+/* .cursor {
+  display: inline-block;
+  animation: blink-caret 0.75s infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+} */
+
+/* ISMAIL FATIMA FINISH */
+
+/* ISMAIL FATIMA YENI START */
+
+.wrapper {
+  margin: 100px auto;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper img {
+  max-width: 320px;
+  float: left;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.text-box {
+  color: #fff;
+}
+.text-box h2 {
+  text-align: center;
+  font-size: 42px;
+}
+.text-box p {
+  font-size: 16px;
+}
+
 .cursor {
   display: inline-block;
   animation: blink-caret 0.75s infinite;
@@ -436,4 +545,4 @@ section img#mountains_front {
   }
 }
 
-/* ISMAIL FATIMA FINISH */
+/* ISMAIL FATIMA YENI FINISH */
