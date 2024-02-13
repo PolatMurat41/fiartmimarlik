@@ -107,7 +107,7 @@ function typeWriterFatima() {
 typeWriterFatima();
 
 // Typewriter Effect for ismail
-const ismailElement = document.querySelector(".ismail");
+/* const ismailElement = document.querySelector(".ismail");
 const ismailText = ismailElement.textContent.trim();
 const ismailInterval = 100;
 
@@ -128,7 +128,7 @@ function typeWriterIsmail() {
   type();
 }
 
-typeWriterIsmail();
+typeWriterIsmail(); */
 
 // SCROLL YAPINCA CONTAINER BASINA GELMESI
 document.getElementById("btn").addEventListener("click", function (event) {

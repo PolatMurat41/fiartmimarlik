@@ -1,3 +1,31 @@
+// HANGI SAYFADA OLDUGUMUZ BELLI OLSUN
+var headerLinks = document.querySelectorAll("header ul li a");
+
+function updateActivateLink() {
+  var currentURL = window.location.href;
+
+  headerLinks.forEach(function (link) {
+    var linkURL = link.href;
+
+    if (currentURL.includes(linkURL) && !link.classList.contains("active")) {
+      headerLinks.forEach(function (otherLink) {
+        otherLink.classList.remove("active");
+      });
+
+      link.classList.add("active");
+    }
+  });
+}
+
+if (window.location.pathname === "/projects.html") {
+  document.body.classList.add("projects-page");
+  headerLinks[1].classList.add("active");
+}
+
+window.addEventListener("load", updateActivateLink);
+window.addEventListener("hashchange", updateActivateLink);
+// *********
+
 function closePopup() {
   document.getElementById("imagePopup").style.display = "none";
 }
