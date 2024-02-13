@@ -58,6 +58,35 @@ body {
     color: #2b1055;
   } */
 
+/* VIDEO START */
+.landingpage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videobackground {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.videoplayer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+/* VIDEO END */
+
 header {
   position: fixed;
   top: 0;
@@ -186,16 +215,59 @@ section img#mountains_front {
 }
 
 #btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   text-decoration: none;
   display: inline-block;
   padding: 8px 30px;
   border-radius: 40px;
-  background: #fff;
   color: #2b1055;
   font-size: 1.2em;
   z-index: 9;
-  transform: translateY(100px);
+
+  /* top: 50%;
+  transform: translate(-50%, -50%); */
 }
+#btn span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: arrows 2s infinite;
+}
+#btn span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+#btn span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes arrows {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+/* .arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+} */
 
 .genel {
   /* background: linear-gradient(to top, #1c0522, transparent); */
