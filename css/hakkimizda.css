@@ -39,9 +39,9 @@ header {
 }
 
 header.scrolled {
-  background: #ffffff;
-  transition: background 4s ease;
-  opacity: 0.8;
+  background: linear-gradient(to bottom, #ffffff, transparent);
+  /* background: #fff; */
+  transition: background 0.5s ease;
 }
 
 header .logo {
@@ -160,11 +160,20 @@ header ul li a.active {
   justify-content: center;
   align-items: center;
 }
+.misyonumuzfoto {
+  z-index: -3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/img/projects/interior/interior-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 .counterlayout {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 30vh;
   justify-content: center;
   display: flex;
@@ -172,6 +181,7 @@ header ul li a.active {
   width: 100%;
   padding: 5vw;
 }
+
 /* .counterlayout{
   background-position: center;
   background-repeat: no-repeat;
@@ -197,6 +207,17 @@ header ul li a.active {
 
 .counter {
   width: 30%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  /* padding: 10px; */
 }
 .fa-handshake {
   font-size: 3vh;
@@ -214,11 +235,21 @@ header ul li a.active {
   text-align: center;
   padding-block: 5vh;
 }
-.misyonumuz h1,
-P {
+.baslik h1 {
   justify-content: center;
   color: #0e0d0d;
   font-weight: 800;
+  text-shadow: 2px 2px rgb(255, 0, 0);
+}
+.misyonmetin p {
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.misyonmetin h3 {
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
 }
 .misyonmetin {
   display: block;
@@ -229,9 +260,6 @@ P {
   margin: auto;
   opacity: 0;
   animation: slideFromLeft 1s ease forwards;
-}
-.misyonmetin h3 {
-  color: rgb(20, 20, 20);
 }
 
 @keyframes slideFromLeft {
@@ -249,78 +277,83 @@ P {
   font-weight: 1000;
 }
 
-.referanslar {
-  width: 100%;
-  display: flex;
-  height: 8vh;
-  justify-content: center;
-  align-items: center;
-  /* footer section start */
-}
-.wrapper {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* SLIDER START */
 .slider {
-  width: calc(250px * 14);
-  height: 100%;
-  position: relative;
-  background: transparent;
   /* box-shadow:0 10px 20px -10px rgba(3, 3, 3, 0.2); */
   overflow: hidden;
   display: flex;
+  overflow: hidden;
+  padding: 20px 0;
+  white-space: nowrap;
+  position: relative;
+  /* height: 8vh; */
+  /* background: transparent; */
+
+  background: url("/assets/img/background/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.9),
+    inset 0px 10px 10px rgba(0, 0, 0, 0.9);
 }
-.slide {
-  gap: 20%;
+
+.slider::before,
+.slider::after {
+  position: absolute;
+  top: 0;
+  width: 10vw;
   height: 100%;
-  display: flex;
-  align-items: center;
-  animation: slideshow 10s linear infinite;
+  content: "";
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.slider::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(118, 181, 0, 0), rgb(0, 0, 0));
+}
+
+.slider:hover .slide {
+  animation-play-state: paused;
+}
+
+.slide {
+  display: inline-block;
+  justify-content: space-evenly;
+  animation: 35s slide infinite linear;
 }
 .slide img {
   height: 100%;
-  padding: 0 30px 0 30px;
+  padding: 10px 200px 10px;
+  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
 }
-@keyframes slideshow {
+
+@keyframes slide {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(-100%);
   }
 }
-.slider::before,
-.slider::after {
-  height: 100px;
-  width: 200px;
-  position: absolute;
-  content: "";
-  /* background: linear-gradient(to right,rgb(121, 118, 118) 0%,rgba(255,255,225,0)100%); */
-  z-index: 2;
-}
-.slider::before {
-  left: 0;
-  right: 0;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slide:hover {
-  animation-play-state: paused; /* Üzerine gelindiğinde animasyonu duraklat */
-}
+/* SLIDER FINISH */
 
 /* footer section start */
 .footer {
   height: 55vh;
   width: 100%;
-  background-color: black;
-  /* background-color: black; */
   position: absolute;
+
+  background: url("/assets/img/background/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.9),
+    inset 0px -10px 10px rgba(0, 0, 0, 0.9);
 }
 .footerlayout {
   height: 100%;
@@ -508,6 +541,7 @@ flex-direction: column; */
   text-align: center;
   margin-left: 12%;
 }
+
 .foolowus {
   width: 100%;
   display: flex;
@@ -529,23 +563,8 @@ flex-direction: column; */
   align-items: center;
   gap: 1rem;
 }
-.socialicon {
-  text-align: center;
-}
-.fa-facebook {
-  font-size: 4vh;
-  color: #fff;
-}
-.fa-instagram {
-  font-size: 4vh;
-  color: #fff;
-}
-.fa-linkedin {
-  font-size: 4vh;
-  color: #fff;
-}
-.fa-square-youtube {
-  font-size: 4vh;
+.icon {
+  font-size: 3vh;
   color: #fff;
 }
 
