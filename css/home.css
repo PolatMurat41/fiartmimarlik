@@ -10,7 +10,7 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(rgb(30, 30, 30), #141b31);
+  background: linear-gradient(to top, rgb(30, 30, 30), #141b31);
   font-family: "Poppins", sans-serif;
 
   /* FATMA ISMAIL ICIN (CONTAINER TASIDIM) */
@@ -199,10 +199,14 @@ section {
 .content-foto {
   z-index: 1;
   /* text-align: center; */
+
+  /* padding: 100px; */
+}
+.content-foto p {
   font-size: 20px;
   font-weight: bolder;
-  color: rgb(255, 0, 0);
-  /* padding: 100px; */
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(0, 0, 0);
 }
 .arkadafoto {
   z-index: -3;
